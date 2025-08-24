@@ -3,29 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Nefeli Gaming GR</title>
+  <title>Nefeli Gaming GR — Official</title>
+  <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Roblox & PUBG content • Shorts • Livestreams">
 </head>
 <body>
-  <header>
-    <h1>Nefeli Gaming • Official</h1>
-    <p>Roblox • PUBG • Shorts</p>
-    <nav>
-      <a href="https://www.youtube.com/@nefeligaminggr" target="_blank">YouTube</a> |
-      <a href="https://www.tiktok.com/@giovapquhjm" target="_blank">TikTok</a> |
-      <a href="mailto:Giovannipiperidis@yahoo.com">Email</a>
+  <div class="bg"></div>
+
+  <header class="wrap header">
+    <a class="brand" href="/">
+      <img src="assets/logo.svg" alt="Nefeli Gaming GR" width="40" height="40">
+      <span>Nefeli Gaming</span>
+    </a>
+    <nav class="nav">
+      <a href="https://www.youtube.com/@nefeligaminggr" target="_blank" rel="noopener" class="btn">YouTube</a>
+      <a href="https://www.tiktok.com/@giovapquhjm" target="_blank" rel="noopener" class="btn">TikTok</a>
+      <a href="mailto:Giovannipiperidis@yahoo.com" class="btn ghost">Email</a>
     </nav>
   </header>
-  <main>
-    <h2>Latest Video</h2>
-    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden">
-      <iframe src="https://www.youtube.com/embed/2suIq_laUk0"
-              frameborder="0" allowfullscreen
-              style="position:absolute;top:0;left:0;width:100%;height:100%"></iframe>
-    </div>
+
+  <main class="wrap grid">
+    <section class="hero card">
+      <h1>Gaming που «γράφει»</h1>
+      <p>Roblox • PUBG • καθημερινά shorts. Join για τα πιο δυνατά highlights.</p>
+      <div class="cta-row">
+        <a class="btn xl" href="https://www.youtube.com/@nefeligaminggr" target="_blank" rel="noopener">Subscribe</a>
+        <a class="btn xl ghost" href="#latest">Δες το νέο βίντεο</a>
+      </div>
+    </section>
+
+    <section id="latest" class="video card">
+      <div class="ratio">
+        <iframe
+          src="https://www.youtube.com/embed/2suIq_laUk0"
+          title="Latest Video" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-meta">
+        <h2>Latest Upload</h2>
+        <p>Κάνε like και άφησε σχόλιο για επόμενο challenge.</p>
+      </div>
+    </section>
+
+    <section class="about card">
+      <h2>Σχετικά</h2>
+      <ul class="facts">
+        <li>Στόχος: high-energy gameplay & clean edits</li>
+        <li>Πρόγραμμα: 3–5 uploads/εβδ. + shorts</li>
+        <li>Business: <a href="mailto:Giovannipiperidis@yahoo.com">email</a></li>
+      </ul>
+    </section>
   </main>
-  <footer>
-    <small>© 2025 Nefeli Gaming GR</small>
+
+  <footer class="wrap footer">
+    <small>© 2025 Nefeli Gaming GR • Powered by GitHub Pages</small>
   </footer>
 </body>
 </html>
