@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  padding: 20px;
+  background: #fafafa;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+nav a {
+  margin-right: 10px;
+  color: #0a58ca;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
