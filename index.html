@@ -5,26 +5,25 @@
   <meta name="google-site-verification" content="WrE052B6h1wSasuTdaF3emFy8EsunrBpYzzl0sj1p_w" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ReGadget Market | Κινητά, Tablet, Laptop & Gadgets</title>
-  <meta name="description" content="ReGadget Market: σύγκριση για κινητά, tablet, laptop και gadgets με λειτουργικά κουμπιά για Skroutz, Flip και email επικοινωνίας.">
-  <meta name="theme-color" content="#07111f">
+  <title>ReGadget Check | Έλεγχος πριν αγοράσεις μεταχειρισμένη συσκευή</title>
+  <meta name="description" content="Έλεγξε αν αξίζει ένα μεταχειρισμένο κινητό, tablet, laptop ή gadget πριν το αγοράσεις. Δες τι να προσέξεις και έλεγξε live τιμή σε Skroutz και Flip.">
+  <meta name="theme-color" content="#0f172a">
 
   <style>
     :root{
-      --bg:#07111f;
-      --panel:#101d31;
-      --text:#f7fbff;
-      --muted:#93a4bd;
-      --blue:#3b82f6;
-      --cyan:#22d3ee;
-      --green:#34d399;
-      --amber:#f59e0b;
-      --red:#fb7185;
-      --line:rgba(255,255,255,.12);
+      --bg:#0f172a;
+      --panel:#111c33;
+      --text:#f8fafc;
+      --muted:#94a3b8;
       --soft:#f5f7fb;
       --dark:#0f172a;
-      --shadow:0 24px 70px rgba(0,0,0,.34);
-      --r:24px;
+      --blue:#2563eb;
+      --green:#16a34a;
+      --orange:#f59e0b;
+      --red:#ef4444;
+      --line:rgba(255,255,255,.12);
+      --shadow:0 22px 60px rgba(0,0,0,.25);
+      --r:22px;
       --wrap:1180px;
     }
 
@@ -32,24 +31,24 @@
     html{scroll-behavior:smooth}
     body{
       margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
       background:
-        radial-gradient(900px 520px at 8% -5%,rgba(59,130,246,.34),transparent 60%),
-        radial-gradient(850px 520px at 92% 0%,rgba(34,211,238,.18),transparent 60%),
+        radial-gradient(900px 500px at 10% -10%,rgba(37,99,235,.35),transparent 60%),
+        radial-gradient(700px 420px at 90% 0%,rgba(34,197,94,.14),transparent 60%),
         var(--bg);
       color:var(--text);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
       line-height:1.5;
     }
 
-    a{color:inherit;text-decoration:none}
+    a{text-decoration:none;color:inherit}
     button,input,select,textarea{font:inherit}
     .section{max-width:var(--wrap);margin:auto;padding:0 20px}
 
     .header{
       position:sticky;
       top:0;
-      z-index:50;
-      background:rgba(7,17,31,.88);
+      z-index:20;
+      background:rgba(15,23,42,.88);
       backdrop-filter:blur(14px);
       border-bottom:1px solid var(--line);
     }
@@ -61,7 +60,7 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:14px;
+      gap:16px;
     }
 
     .brand{
@@ -69,14 +68,14 @@
       align-items:center;
       gap:12px;
       font-weight:1000;
-      letter-spacing:-.03em;
+      letter-spacing:-.02em;
     }
 
     .logo{
-      width:46px;
-      height:46px;
+      width:44px;
+      height:44px;
       border-radius:16px;
-      background:linear-gradient(135deg,var(--blue),var(--cyan));
+      background:linear-gradient(135deg,#2563eb,#22c55e);
       display:grid;
       place-items:center;
       box-shadow:var(--shadow);
@@ -84,34 +83,32 @@
 
     .brand small{
       display:block;
-      color:var(--muted);
       font-size:12px;
-      font-weight:800;
+      color:var(--muted);
       letter-spacing:0;
     }
 
     .nav{
       display:flex;
       gap:18px;
-      color:#c8d3e5;
+      color:#cbd5e1;
       font-size:14px;
-      font-weight:850;
+      font-weight:800;
     }
 
-    .nav a:hover{color:#fff}
+    .nav a:hover{color:white}
 
     .btn{
       display:inline-flex;
       align-items:center;
       justify-content:center;
-      gap:8px;
       border:1px solid var(--line);
-      border-radius:16px;
-      padding:12px 17px;
-      font-weight:1000;
-      cursor:pointer;
+      border-radius:15px;
+      padding:12px 16px;
+      font-weight:900;
       background:rgba(255,255,255,.07);
       color:white;
+      cursor:pointer;
       transition:.18s ease;
       text-align:center;
     }
@@ -122,8 +119,8 @@
     }
 
     .btn.primary{
-      background:linear-gradient(135deg,var(--blue),#2563eb);
       border:0;
+      background:linear-gradient(135deg,#2563eb,#1d4ed8);
     }
 
     .btn.dark{
@@ -138,55 +135,61 @@
       border:0;
     }
 
+    .btn.green{
+      background:#16a34a;
+      border:0;
+      color:white;
+    }
+
     .btn.small{
       padding:10px 12px;
-      border-radius:13px;
       font-size:13px;
+      border-radius:12px;
     }
 
     .btn.full{width:100%}
 
     .hero{
       display:grid;
-      grid-template-columns:1.08fr .92fr;
+      grid-template-columns:1.1fr .9fr;
       gap:34px;
       align-items:center;
-      padding-top:72px;
+      padding-top:70px;
       padding-bottom:50px;
     }
 
-    .eyebrow{
+    .tag{
       display:inline-flex;
       align-items:center;
-      gap:9px;
+      gap:8px;
       border:1px solid var(--line);
+      background:rgba(255,255,255,.07);
       border-radius:999px;
-      background:rgba(255,255,255,.06);
       padding:8px 12px;
-      color:#d7e8ff;
-      font-weight:900;
+      color:#dbeafe;
       font-size:13px;
+      font-weight:900;
     }
 
     .dot{
       width:9px;
       height:9px;
-      background:var(--green);
+      background:#22c55e;
       border-radius:50%;
     }
 
     h1{
-      font-size:clamp(40px,7vw,74px);
+      font-size:clamp(38px,7vw,72px);
       line-height:.95;
-      margin:22px 0 20px;
       letter-spacing:-.055em;
+      margin:22px 0 18px;
     }
 
     h2{
-      font-size:clamp(30px,4vw,50px);
-      line-height:1.03;
+      font-size:clamp(30px,4vw,48px);
+      line-height:1.04;
+      letter-spacing:-.04em;
       margin:0 0 12px;
-      letter-spacing:-.035em;
     }
 
     h3{
@@ -195,153 +198,68 @@
     }
 
     p{margin-top:0}
-
-    .lead{
-      font-size:18px;
-      color:#c3cee0;
-      max-width:700px;
-    }
-
+    .lead{font-size:18px;color:#cbd5e1;max-width:720px}
     .muted{color:var(--muted)}
 
     .actions{
       display:flex;
-      gap:12px;
       flex-wrap:wrap;
+      gap:12px;
       margin-top:26px;
     }
 
-    .stats{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:12px;
-      margin-top:30px;
-    }
-
-    .stat,.card{
-      background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.04));
+    .hero-card{
+      background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.04));
       border:1px solid var(--line);
       border-radius:var(--r);
+      padding:22px;
       box-shadow:var(--shadow);
     }
 
-    .stat{padding:16px}
-    .stat strong{display:block;font-size:25px}
-    .stat span{color:var(--muted)}
-
-    .hero-card{padding:22px}
-
-    .deal-head{
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      align-items:flex-start;
+    .hero-card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      border-radius:20px;
+      display:block;
+      margin:16px 0;
+      background:#1e293b;
     }
 
-    .badge{
-      display:inline-flex;
-      border-radius:999px;
-      padding:7px 10px;
-      font-size:12px;
-      font-weight:1000;
-      white-space:nowrap;
-    }
-
-    .badge.good{background:rgba(52,211,153,.16);color:#86efac}
-    .badge.mid{background:rgba(245,158,11,.17);color:#fcd34d}
-    .badge.bad{background:rgba(251,113,133,.17);color:#fda4af}
-
-    .device-visual{
-      height:320px;
-      border-radius:24px;
-      margin:18px 0;
-      background:linear-gradient(135deg,#111827,#1d4ed8,#22d3ee);
-      display:grid;
-      place-items:center;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .device-visual:before{
-      content:"";
-      position:absolute;
-      width:170px;
-      height:170px;
-      border-radius:42px;
-      background:rgba(255,255,255,.11);
-      left:24px;
-      bottom:24px;
-      transform:rotate(14deg);
-    }
-
-    .phone{
-      width:145px;
-      height:260px;
-      border:6px solid #020617;
-      background:#0f172a;
-      border-radius:34px;
-      position:relative;
-      box-shadow:0 30px 60px rgba(0,0,0,.45);
-    }
-
-    .phone:before{
-      content:"";
-      position:absolute;
-      top:12px;
-      left:50%;
-      transform:translateX(-50%);
-      width:58px;
-      height:18px;
-      background:#020617;
-      border-radius:999px;
-    }
-
-    .phone:after{
-      content:"";
-      position:absolute;
-      inset:46px 18px 18px;
-      border-radius:22px;
-      background:linear-gradient(135deg,#38bdf8,#a7f3d0);
-    }
-
-    .mini{
+    .mini-grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:10px;
     }
 
-    .mini div{
+    .mini-grid div{
       background:rgba(255,255,255,.08);
-      padding:13px;
-      border-radius:16px;
+      padding:12px;
+      border-radius:15px;
     }
 
-    .mini small{
-      color:var(--muted);
+    .mini-grid small{
       display:block;
+      color:var(--muted);
     }
 
     .quick{
       display:grid;
       grid-template-columns:repeat(4,1fr);
       gap:12px;
-      margin:14px auto 52px;
+      margin-bottom:54px;
     }
 
     .quick a{
       background:white;
-      color:#08111f;
+      color:#0f172a;
+      padding:18px;
       border-radius:18px;
-      padding:17px;
       transition:.18s ease;
     }
 
     .quick a:hover{transform:translateY(-2px)}
-    .quick span{
-      display:block;
-      color:#475569;
-      font-size:13px;
-    }
+    .quick span{display:block;color:#64748b;font-size:13px}
 
     .light-section{
       background:var(--soft);
@@ -352,9 +270,9 @@
     .section-head{
       display:flex;
       justify-content:space-between;
+      gap:20px;
       align-items:end;
-      gap:22px;
-      margin-bottom:28px;
+      margin-bottom:26px;
     }
 
     .section-head p{
@@ -364,7 +282,7 @@
 
     .toolbar{
       display:grid;
-      grid-template-columns:1fr 190px 220px;
+      grid-template-columns:1fr 180px 220px;
       gap:12px;
       margin-bottom:20px;
     }
@@ -376,8 +294,8 @@
     .sell-form textarea{
       width:100%;
       border:1px solid #dbe3ef;
-      border-radius:16px;
-      padding:14px 15px;
+      border-radius:15px;
+      padding:14px;
       background:white;
       color:#0f172a;
       outline:none;
@@ -386,10 +304,10 @@
     .toolbar input:focus,
     .toolbar select:focus,
     .sell-form input:focus,
-    .sell-form textarea:focus,
-    .sell-form select:focus{
-      border-color:#3b82f6;
-      box-shadow:0 0 0 4px rgba(59,130,246,.12);
+    .sell-form select:focus,
+    .sell-form textarea:focus{
+      border-color:#2563eb;
+      box-shadow:0 0 0 4px rgba(37,99,235,.12);
     }
 
     .grid{
@@ -398,107 +316,88 @@
       gap:18px;
     }
 
-    .product{
+    .device{
       background:white;
-      border:1px solid #e5eaf2;
-      border-radius:24px;
-      padding:16px;
-      box-shadow:0 16px 35px rgba(15,23,42,.08);
+      border:1px solid #e5e7eb;
+      border-radius:22px;
+      padding:15px;
+      box-shadow:0 14px 32px rgba(15,23,42,.08);
       display:flex;
       flex-direction:column;
       gap:12px;
     }
 
-    .product-img{
-      height:178px;
-      border-radius:20px;
-      color:white;
-      font-weight:1000;
-      display:grid;
-      place-items:center;
-      text-align:center;
-      padding:18px;
-      background:linear-gradient(135deg,#0f172a,#2563eb);
+    .device img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      border-radius:18px;
+      background:#e5e7eb;
     }
 
-    .product-row{
+    .device-title{
       display:flex;
       justify-content:space-between;
       gap:12px;
+      align-items:flex-start;
     }
 
-    .price{
-      color:#2563eb;
+    .device-title span{
+      color:#64748b;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .risk{
+      display:inline-flex;
+      align-items:center;
+      border-radius:999px;
+      padding:7px 10px;
+      font-size:12px;
       font-weight:1000;
-      font-size:22px;
       white-space:nowrap;
     }
 
-    .product-meta{
+    .risk.low{background:#dcfce7;color:#166534}
+    .risk.medium{background:#fef3c7;color:#92400e}
+    .risk.high{background:#fee2e2;color:#991b1b}
+
+    .checks{
       display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:8px;
+      gap:7px;
+      color:#334155;
+      font-size:14px;
+      padding-left:0;
+      margin:0;
+      list-style:none;
     }
 
-    .product-meta div,.score{
+    .checks li{
       background:#f1f5f9;
-      border-radius:14px;
-      padding:10px;
+      border-radius:12px;
+      padding:8px 10px;
     }
 
-    .product-meta small,.score small{
-      display:block;
-      color:#64748b;
-    }
-
-    .score strong{font-size:20px}
-
-    .product-actions{
+    .device-actions{
       display:grid;
-      grid-template-columns:1fr 1fr 1fr;
+      grid-template-columns:1fr 1fr;
       gap:8px;
       margin-top:auto;
     }
 
-    .note{
-      font-size:13px;
-      color:#64748b;
-      margin:14px 0 0;
+    .device-actions .wide{
+      grid-column:1/-1;
     }
 
-    .lab{
-      display:grid;
-      grid-template-columns:.9fr 1.1fr;
-      gap:22px;
-      align-items:start;
+    .note{
+      color:#64748b;
+      font-size:13px;
+      margin-top:14px;
+    }
+
+    .checklist{
       padding-top:70px;
       padding-bottom:70px;
-    }
-
-    .model-results{
-      display:grid;
-      gap:12px;
-    }
-
-    .model-card{
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.07);
-      border-radius:18px;
-      padding:14px;
-    }
-
-    .bar{
-      height:10px;
-      background:rgba(255,255,255,.1);
-      border-radius:99px;
-      overflow:hidden;
-      margin-top:10px;
-    }
-
-    .bar span{
-      display:block;
-      height:100%;
-      background:linear-gradient(90deg,var(--green),var(--cyan));
     }
 
     .info-grid{
@@ -508,24 +407,33 @@
       margin-top:22px;
     }
 
-    .info{padding:22px}
-    .info b{color:#93c5fd}
+    .info{
+      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.04));
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      padding:22px;
+      box-shadow:var(--shadow);
+    }
+
+    .info b{
+      color:#93c5fd;
+    }
 
     .sell{
       display:grid;
-      grid-template-columns:.82fr 1.18fr;
+      grid-template-columns:.85fr 1.15fr;
       gap:24px;
       align-items:start;
     }
 
     .sell-form{
+      background:white;
+      border-radius:24px;
+      padding:22px;
       display:grid;
       grid-template-columns:repeat(2,1fr);
       gap:12px;
-      background:white;
-      border-radius:28px;
-      padding:22px;
-      box-shadow:0 18px 40px rgba(15,23,42,.08);
+      box-shadow:0 14px 32px rgba(15,23,42,.08);
     }
 
     .sell-form label{
@@ -533,13 +441,15 @@
       color:#334155;
     }
 
-    .sell-form .wide{grid-column:1/-1}
+    .sell-form .wide{
+      grid-column:1/-1;
+    }
 
     .contact-box{
       margin-top:18px;
       background:#0f172a;
       color:white;
-      border-radius:24px;
+      border-radius:22px;
       padding:18px;
     }
 
@@ -548,45 +458,41 @@
       font-weight:900;
     }
 
+    .footer{
+      max-width:var(--wrap);
+      margin:auto;
+      padding:34px 20px;
+      color:#94a3b8;
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+    }
+
     .toast{
       position:fixed;
       left:50%;
       bottom:18px;
       transform:translateX(-50%);
-      z-index:80;
       background:#0f172a;
       color:white;
       border:1px solid rgba(255,255,255,.18);
-      box-shadow:var(--shadow);
       border-radius:999px;
       padding:12px 16px;
+      box-shadow:var(--shadow);
+      z-index:80;
       display:none;
     }
 
-    .footer{
-      max-width:var(--wrap);
-      margin:auto;
-      padding:36px 20px;
-      display:flex;
-      justify-content:space-between;
-      gap:18px;
-      color:#9fb0c7;
-    }
-
-    .status{color:#bdd1ee}
-
     @media(max-width:920px){
       .nav{display:none}
-      .hero,.lab,.sell{grid-template-columns:1fr}
+      .hero,.sell{grid-template-columns:1fr}
       .quick,.grid,.info-grid{grid-template-columns:1fr}
       .toolbar{grid-template-columns:1fr}
-      .stats,.mini{grid-template-columns:1fr}
-      .product-actions{grid-template-columns:1fr}
-      h1{font-size:44px}
+      .mini-grid{grid-template-columns:1fr}
       .section-head{display:block}
-      .footer{display:block}
-      .hero{padding-top:44px}
       .sell-form{grid-template-columns:1fr}
+      h1{font-size:42px}
+      .footer{display:block}
     }
   </style>
 </head>
@@ -594,105 +500,95 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <a class="brand" href="#top" aria-label="ReGadget αρχική">
+      <a class="brand" href="#top">
         <span class="logo">R</span>
-        <span>ReGadget<small>market comparison</small></span>
+        <span>ReGadget Check<small>πριν αγοράσεις gadget</small></span>
       </a>
 
-      <nav class="nav" aria-label="Κύρια πλοήγηση">
-        <a href="#market">Προϊόντα</a>
-        <a href="#lab">Risk Lab</a>
-        <a href="#sell">Πώληση</a>
+      <nav class="nav">
+        <a href="#devices">Συσκευές</a>
+        <a href="#checklist">Τι ελέγχω</a>
+        <a href="#sell">Πούλησε</a>
         <a href="#contact">Επικοινωνία</a>
       </nav>
 
-      <a class="btn primary" href="#sell">Πούλησε τώρα</a>
+      <a class="btn primary" href="#devices">Ξεκίνα έλεγχο</a>
     </div>
   </header>
 
   <main id="top">
     <section class="section hero">
       <div>
-        <p class="eyebrow"><span class="dot"></span> Σύγκριση κινητών, tablet, laptop και gadgets</p>
+        <p class="tag"><span class="dot"></span> Όχι e-shop. Έλεγχος πριν αγοράσεις.</p>
 
-        <h1>Βρες συσκευή χωρίς να ψάχνεις στα τυφλά σε δέκα καρτέλες.</h1>
+        <h1>Βρήκες μεταχειρισμένη συσκευή; Μην δώσεις λεφτά στα τυφλά.</h1>
 
         <p class="lead">
-          Το ReGadget Market μαζεύει πραγματικά μοντέλα προϊόντων, σου δείχνει ενδεικτικό score ρίσκου και σε στέλνει με κουμπί σε Skroutz, Flip ή έτοιμο email ενδιαφέροντος.
+          Εδώ βλέπεις τι να προσέξεις πριν αγοράσεις κινητό, tablet, laptop ή ακουστικά.
+          Δεν βάζουμε ψεύτικες τιμές. Πατάς κουμπί και βλέπεις live τιμή σε Skroutz ή Flip.
         </p>
 
         <div class="actions">
-          <a class="btn primary" href="#market">Δες προϊόντα</a>
-          <a class="btn" target="_blank" rel="noopener" href="https://flip.gr/shop/">Άνοιγμα Flip</a>
-          <a class="btn" href="mailto:Giovannipiperidis@yahoo.com?subject=Επικοινωνία%20ReGadget%20Market&body=Γεια%20σας,%0A%0AΘέλω%20πληροφορίες%20για%20το%20ReGadget%20Market.%0A">Email</a>
-        </div>
-
-        <div class="stats">
-          <div class="stat"><strong>12</strong><span>πραγματικά μοντέλα</span></div>
-          <div class="stat"><strong>Flip + Skroutz</strong><span>εξωτερικές αναζητήσεις</span></div>
-          <div class="stat"><strong>Email</strong><span>έτοιμη επικοινωνία</span></div>
+          <a class="btn primary" href="#devices">Δες συσκευές</a>
+          <a class="btn" href="#checklist">Τι να ελέγξω</a>
+          <a class="btn" href="mailto:Giovannipiperidis@yahoo.com?subject=Επικοινωνία%20ReGadget%20Check&body=Γεια%20σας,%0A%0AΘέλω%20πληροφορίες%20για%20το%20ReGadget%20Check.%0A">Στείλε email</a>
         </div>
       </div>
 
-      <aside class="card hero-card">
-        <div class="deal-head">
-          <div>
-            <span class="muted">Προτεινόμενη αναζήτηση</span>
-            <h2>iPhone 15</h2>
-          </div>
-          <span class="badge good">Popular</span>
+      <aside class="hero-card">
+        <div>
+          <span class="muted">Παράδειγμα ελέγχου</span>
+          <h2>iPhone πριν την αγορά</h2>
         </div>
 
-        <div class="device-visual">
-          <div class="phone"></div>
-        </div>
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80" alt="Κινητό τηλέφωνο για έλεγχο πριν αγορά">
 
-        <div class="mini">
-          <div><small>Κατηγορία</small><strong>Κινητό</strong></div>
-          <div><small>Σύνδεσμοι</small><strong>2</strong></div>
-          <div><small>Score</small><strong id="heroScore">--</strong></div>
+        <div class="mini-grid">
+          <div><small>Πρώτα</small><strong>Έλεγχος</strong></div>
+          <div><small>Μετά</small><strong>Skroutz / Flip</strong></div>
+          <div><small>Τέλος</small><strong>Αγορά</strong></div>
         </div>
       </aside>
     </section>
 
-    <section class="section quick" aria-label="Γρήγορες κατηγορίες">
-      <a target="_blank" rel="noopener" href="https://www.skroutz.gr/search?keyphrase=smartphone">
+    <section class="section quick">
+      <a href="#devices" data-filter="Κινητό">
         <strong>Κινητά</strong>
-        <span>Αναζήτηση στο Skroutz</span>
+        <span>iPhone, Samsung, Xiaomi</span>
       </a>
 
-      <a target="_blank" rel="noopener" href="https://www.skroutz.gr/search?keyphrase=tablet">
+      <a href="#devices" data-filter="Tablet">
         <strong>Tablet</strong>
-        <span>iPad, Galaxy Tab, Lenovo</span>
+        <span>iPad, Galaxy Tab</span>
       </a>
 
-      <a target="_blank" rel="noopener" href="https://www.skroutz.gr/search?keyphrase=laptop">
-        <strong>Υπολογιστές</strong>
-        <span>Laptop & MacBook</span>
+      <a href="#devices" data-filter="Laptop">
+        <strong>Laptop</strong>
+        <span>MacBook, Lenovo, HP</span>
       </a>
 
-      <a target="_blank" rel="noopener" href="https://flip.gr/shop/">
-        <strong>Flip Shop</strong>
-        <span>Refurbished αγορά</span>
+      <a href="#devices" data-filter="Gadget">
+        <strong>Gadgets</strong>
+        <span>AirPods, Sony, ακουστικά</span>
       </a>
     </section>
 
-    <section id="market" class="light-section">
+    <section id="devices" class="light-section">
       <div class="section">
         <div class="section-head">
           <div>
-            <h2>Προϊόντα και αναζητήσεις</h2>
+            <h2>Διάλεξε συσκευή και δες τι να προσέξεις</h2>
             <p>
-              Τα προϊόντα είναι πραγματικά μοντέλα, όχι φανταστικές αγγελίες. Το Skroutz κουμπί κάνει αναζήτηση ανά μοντέλο. Το Flip κουμπί ανοίγει το Flip shop.
+              Δεν πουλάμε τη συσκευή από εδώ. Σου λέμε απλά τι να ελέγξεις και μετά σε πάμε να δεις live τιμή.
+              Σοκαριστικά τίμιο, για site.
             </p>
           </div>
 
-          <a class="btn dark" target="_blank" rel="noopener" href="https://flip.gr/shop/">Άνοιγμα Flip shop</a>
+          <a class="btn dark" target="_blank" rel="noopener" href="https://flip.gr/shop/">Άνοιγμα Flip</a>
         </div>
 
         <div class="toolbar">
-          <input id="search" type="search" placeholder="Ψάξε π.χ. iPhone, Samsung, iPad, MacBook">
-
+          <input id="search" type="search" placeholder="Ψάξε π.χ. iPhone, Samsung, MacBook">
           <select id="category">
             <option value="all">Όλες</option>
             <option value="Κινητό">Κινητά</option>
@@ -700,74 +596,86 @@
             <option value="Laptop">Laptop</option>
             <option value="Gadget">Gadgets</option>
           </select>
-
-          <select id="sort">
-            <option value="score">Καλύτερο score</option>
-            <option value="price">Χαμηλότερη ενδεικτική τιμή</option>
-            <option value="risk">Χαμηλότερο ρίσκο</option>
+          <select id="riskSort">
+            <option value="recommended">Πιο προτεινόμενα</option>
+            <option value="low">Χαμηλότερο ρίσκο</option>
+            <option value="high">Υψηλότερο ρίσκο</option>
           </select>
         </div>
 
-        <div id="products" class="grid"></div>
+        <div id="deviceGrid" class="grid"></div>
 
         <p class="note">
-          Οι τιμές είναι ενδεικτικά εύρη σύγκρισης και όχι live τιμές. Για πραγματική τιμή πατάς Skroutz ή Flip.
+          Οι εικόνες είναι ενδεικτικές φωτογραφίες συσκευών ανά κατηγορία. Για ακριβή κατάσταση προϊόντος, πάντα βλέπεις φωτογραφίες πωλητή, απόδειξη, IMEI/serial και εγγύηση.
         </p>
       </div>
     </section>
 
-    <section id="lab" class="section lab">
-      <div>
-        <p class="eyebrow"><span class="dot"></span> Risk Lab</p>
-        <h2>Γρήγορη εκτίμηση αγοράς</h2>
-
-        <p class="lead">
-          Το demo αξιολογεί ενδεικτική τιμή, δημοτικότητα, ρίσκο μεταχειρισμένου και ευκολία μεταπώλησης. Δεν αντικαθιστά έλεγχο IMEI, απόδειξη ή εγγύηση.
-        </p>
-
-        <button id="run" class="btn primary">Τρέξε ανάλυση</button>
-        <p id="status" class="status">Έτοιμο για ανάλυση.</p>
-      </div>
-
-      <div class="card hero-card">
-        <h3>Τελικός πίνακας</h3>
-        <div id="results" class="model-results">
-          <p class="muted">Πάτα ανάλυση για ποσοστά επιτυχίας και κινδύνου.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="trust" class="section">
-      <h2>Τι λειτουργεί</h2>
+    <section id="checklist" class="section checklist">
+      <p class="tag"><span class="dot"></span> Γρήγορος οδηγός</p>
+      <h2>Τι ελέγχεις πριν δώσεις λεφτά</h2>
+      <p class="lead">
+        Αν ο πωλητής βιάζεται, δεν δίνει στοιχεία ή “δεν ξέρει” βασικά πράγματα, κάνεις πίσω.
+        Δεν αγοράζουμε μυστήρια κουτιά, εκτός αν είμαστε σε τηλεπαιχνίδι.
+      </p>
 
       <div class="info-grid">
-        <article class="card info"><b>01</b><h3>Skroutz</h3><p>Κάθε προϊόν ανοίγει αναζήτηση Skroutz με το ακριβές μοντέλο.</p></article>
-        <article class="card info"><b>02</b><h3>Flip</h3><p>Κουμπιά προς το Flip shop για refurbished αγορά.</p></article>
-        <article class="card info"><b>03</b><h3>Email</h3><p>Κάθε προϊόν ανοίγει έτοιμο email ενδιαφέροντος στο δικό σου email.</p></article>
-        <article class="card info"><b>04</b><h3>Φόρμα πώλησης</h3><p>Ο χρήστης συμπληρώνει στοιχεία και δημιουργείται έτοιμο email.</p></article>
-        <article class="card info"><b>05</b><h3>Φίλτρα</h3><p>Αναζήτηση, κατηγορία και ταξινόμηση δουλεύουν μέσα στη σελίδα.</p></article>
-        <article class="card info"><b>06</b><h3>Google</h3><p>Ο κωδικός επαλήθευσης παραμένει στο head.</p></article>
+        <article class="info">
+          <b>01</b>
+          <h3>IMEI / Serial</h3>
+          <p>Ζήτα IMEI ή serial number. Έλεγξε αν ταιριάζει με τη συσκευή και αν δεν φαίνεται ύποπτο.</p>
+        </article>
+
+        <article class="info">
+          <b>02</b>
+          <h3>Μπαταρία</h3>
+          <p>Σε iPhone δες Battery Health. Κάτω από 85% υπολόγισε κόστος αλλαγής μπαταρίας.</p>
+        </article>
+
+        <article class="info">
+          <b>03</b>
+          <h3>Κλειδώματα</h3>
+          <p>Σε iPhone πρέπει να έχει βγει από iCloud. Σε Android πρόσεχε Google account lock.</p>
+        </article>
+
+        <article class="info">
+          <b>04</b>
+          <h3>Οθόνη και Face ID</h3>
+          <p>Έλεγξε αφή, φωτεινότητα, καμένα pixels, Face ID / fingerprint και κάμερες.</p>
+        </article>
+
+        <article class="info">
+          <b>05</b>
+          <h3>Απόδειξη</h3>
+          <p>Αν υπάρχει απόδειξη ή εγγύηση, ανεβαίνει πολύ η εμπιστοσύνη. Αν δεν υπάρχει, παζάρεμα.</p>
+        </article>
+
+        <article class="info">
+          <b>06</b>
+          <h3>Τιμή</h3>
+          <p>Μην κοιτάς μία αγγελία. Δες τιμή σε Skroutz, Flip και άλλα παρόμοια πριν αποφασίσεις.</p>
+        </article>
       </div>
     </section>
 
     <section id="sell" class="light-section">
       <div class="section sell">
         <div>
-          <h2>Πούλησε συσκευή</h2>
-          <p>Συμπλήρωσε τα στοιχεία και το κουμπί θα ανοίξει έτοιμο email προς το ReGadget Market.</p>
+          <h2>Θες να πουλήσεις συσκευή;</h2>
+          <p>
+            Συμπλήρωσε τα στοιχεία και θα ανοίξει έτοιμο email προς εμένα.
+            Δεν κρατάμε δεδομένα στο site. Απλά ανοίγει η εφαρμογή email σου.
+          </p>
 
           <div id="contact" class="contact-box">
-            <strong>Άμεση επικοινωνία</strong>
-            <p class="muted">Email επικοινωνίας:</p>
+            <strong>Επικοινωνία</strong>
+            <p class="muted">Email:</p>
             <p><a href="mailto:Giovannipiperidis@yahoo.com">Giovannipiperidis@yahoo.com</a></p>
-
-            <a class="btn light full" href="mailto:Giovannipiperidis@yahoo.com?subject=Επικοινωνία%20ReGadget%20Market&body=Γεια%20σας,%0A%0AΘέλω%20να%20επικοινωνήσω%20για%20το%20ReGadget%20Market.%0A">
-              Στείλε email
-            </a>
+            <a class="btn light full" href="mailto:Giovannipiperidis@yahoo.com?subject=Επικοινωνία%20ReGadget%20Check&body=Γεια%20σας,%0A%0AΘέλω%20να%20επικοινωνήσω%20για%20το%20ReGadget%20Check.%0A">Στείλε email</a>
           </div>
         </div>
 
-        <form class="sell-form" id="sellForm">
+        <form id="sellForm" class="sell-form">
           <label>
             Κατηγορία
             <select id="sellCategory" required>
@@ -781,11 +689,6 @@
           <label>
             Μοντέλο
             <input id="sellModel" required placeholder="π.χ. iPhone 13 Pro">
-          </label>
-
-          <label>
-            Τιμή που ζητάς
-            <input id="sellPrice" required placeholder="π.χ. 450€">
           </label>
 
           <label>
@@ -803,170 +706,184 @@
             <input id="sellArea" required placeholder="π.χ. Θεσσαλονίκη">
           </label>
 
-          <label class="wide">
-            Περιγραφή
-            <textarea id="sellNotes" rows="4" placeholder="Κουτί, απόδειξη, εγγύηση, χτυπήματα, έξτρα"></textarea>
+          <label>
+            Τιμή που σκέφτεσαι
+            <input id="sellPrice" placeholder="π.χ. 450€">
           </label>
 
-          <button type="submit" class="btn primary full">Στείλε στο email μου</button>
+          <label class="wide">
+            Περιγραφή
+            <textarea id="sellNotes" rows="4" placeholder="Κουτί, απόδειξη, εγγύηση, χτυπήματα, αξεσουάρ"></textarea>
+          </label>
+
+          <button type="submit" class="btn primary full">Στείλε τη συσκευή στο email</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <strong>ReGadget Market</strong>
-    <span>Λειτουργικά κουμπιά, email, Skroutz και Flip links.</span>
+    <strong>ReGadget Check</strong>
+    <span>Έλεγχος πριν αγοράσεις μεταχειρισμένη ή refurbished συσκευή.</span>
     <a href="#top">Πάνω</a>
   </footer>
 
-  <div class="toast" id="toast">Άνοιγμα...</div>
+  <div id="toast" class="toast">Άνοιγμα...</div>
 
   <script>
     const CONTACT_EMAIL = "Giovannipiperidis@yahoo.com";
 
-    const products = [
+    const devices = [
       {
-        c:"Κινητό",
-        t:"Apple iPhone 15 128GB",
-        s:"δημοφιλές μοντέλο Apple",
-        p:690,
-        v:760,
-        r:.12,
-        pop:96,
-        q:"Apple iPhone 15 128GB",
-        g:["#111827","#2563eb"]
+        category:"Κινητό",
+        name:"Apple iPhone 15",
+        text:"Καλή επιλογή αν το βρεις σε σωστή κατάσταση. Πρόσεξε υγεία μπαταρίας και εγγύηση.",
+        risk:"low",
+        riskText:"Χαμηλό",
+        score:91,
+        search:"Apple iPhone 15",
+        image:"https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=900&q=80",
+        checks:["Battery Health πάνω από 88%","Face ID και κάμερες","Απόδειξη ή εγγύηση"]
       },
       {
-        c:"Κινητό",
-        t:"Apple iPhone 14 Pro 128GB",
-        s:"premium μεταχειρισμένη επιλογή",
-        p:620,
-        v:710,
-        r:.15,
-        pop:92,
-        q:"Apple iPhone 14 Pro 128GB",
-        g:["#0f172a","#475569"]
+        category:"Κινητό",
+        name:"Apple iPhone 14 Pro",
+        text:"Ακόμα δυνατό, αλλά σε μεταχειρισμένο θέλει καλό έλεγχο. Η οθόνη και το Face ID δεν είναι φθηνά αστεία.",
+        risk:"medium",
+        riskText:"Μεσαίο",
+        score:82,
+        search:"Apple iPhone 14 Pro",
+        image:"https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?auto=format&fit=crop&w=900&q=80",
+        checks:["Face ID να δουλεύει","Οθόνη χωρίς αλλαγές ύποπτες","Μπαταρία πάνω από 85%"]
       },
       {
-        c:"Κινητό",
-        t:"Samsung Galaxy S24 128GB",
-        s:"Android flagship",
-        p:650,
-        v:720,
-        r:.13,
-        pop:90,
-        q:"Samsung Galaxy S24 128GB",
-        g:["#1e1b4b","#3b82f6"]
+        category:"Κινητό",
+        name:"Apple iPhone 13 Pro",
+        text:"Μπορεί να αξίζει, αλλά είναι πιο παλιό. Η μπαταρία είναι το πρώτο πράγμα που κοιτάς.",
+        risk:"medium",
+        riskText:"Μεσαίο",
+        score:76,
+        search:"Apple iPhone 13 Pro",
+        image:"https://images.unsplash.com/photo-1632633728024-e1fd4bef561a?auto=format&fit=crop&w=900&q=80",
+        checks:["Battery Health","Οθόνη και True Tone","iCloud να έχει αφαιρεθεί"]
       },
       {
-        c:"Κινητό",
-        t:"Samsung Galaxy A55 5G",
-        s:"value Android επιλογή",
-        p:330,
-        v:390,
-        r:.10,
-        pop:86,
-        q:"Samsung Galaxy A55 5G",
-        g:["#064e3b","#22c55e"]
+        category:"Κινητό",
+        name:"Samsung Galaxy S24",
+        text:"Καλή επιλογή για Android. Πρόσεξε εγγύηση, οθόνη και αν έχει γίνει επισκευή.",
+        risk:"low",
+        riskText:"Χαμηλό",
+        score:88,
+        search:"Samsung Galaxy S24",
+        image:"https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=900&q=80",
+        checks:["Οθόνη χωρίς burn-in","Κάμερες","Εγγύηση / απόδειξη"]
       },
       {
-        c:"Κινητό",
-        t:"Xiaomi Redmi Note 13 Pro",
-        s:"budget δυνατό μοντέλο",
-        p:250,
-        v:310,
-        r:.14,
-        pop:82,
-        q:"Xiaomi Redmi Note 13 Pro",
-        g:["#7c2d12","#fb923c"]
+        category:"Κινητό",
+        name:"Samsung Galaxy A55",
+        text:"Τίμια value επιλογή. Δεν χρειάζεται να κάνουμε ότι είναι διαστημόπλοιο. Είναι απλά καλό κινητό.",
+        risk:"low",
+        riskText:"Χαμηλό",
+        score:84,
+        search:"Samsung Galaxy A55",
+        image:"https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80",
+        checks:["Μπαταρία","Οθόνη","Απόδειξη αγοράς"]
       },
       {
-        c:"Tablet",
-        t:"Apple iPad 10.9 10th Gen",
-        s:"tablet για καθημερινή χρήση",
-        p:390,
-        v:455,
-        r:.11,
-        pop:88,
-        q:"Apple iPad 10.9 10th Gen",
-        g:["#312e81","#60a5fa"]
+        category:"Κινητό",
+        name:"Xiaomi Redmi Note 13 Pro",
+        text:"Καλή οικονομική επιλογή. Πρόσεξε να μην πληρώσεις κοντά σε τιμή καινούργιου.",
+        risk:"medium",
+        riskText:"Μεσαίο",
+        score:73,
+        search:"Xiaomi Redmi Note 13 Pro",
+        image:"https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=80",
+        checks:["Σύγκριση με καινούργιο","Οθόνη","Φορτιστής / κουτί"]
       },
       {
-        c:"Tablet",
-        t:"Samsung Galaxy Tab S9 FE",
-        s:"Android tablet με pen ecosystem",
-        p:420,
-        v:485,
-        r:.12,
-        pop:84,
-        q:"Samsung Galaxy Tab S9 FE",
-        g:["#164e63","#22d3ee"]
+        category:"Tablet",
+        name:"Apple iPad 10th Gen",
+        text:"Καλό tablet για απλή χρήση. Πρόσεξε οθόνη, μπαταρία και αν έχει Apple ID μέσα.",
+        risk:"low",
+        riskText:"Χαμηλό",
+        score:86,
+        search:"Apple iPad 10th Gen",
+        image:"https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=80",
+        checks:["Apple ID εκτός","Οθόνη χωρίς ραγίσματα","Μπαταρία"]
       },
       {
-        c:"Laptop",
-        t:"Apple MacBook Air M2 13",
-        s:"ελαφρύ laptop για δουλειά",
-        p:920,
-        v:1040,
-        r:.10,
-        pop:94,
-        q:"Apple MacBook Air M2 13",
-        g:["#334155","#94a3b8"]
+        category:"Tablet",
+        name:"Samsung Galaxy Tab S9 FE",
+        text:"Καλή Android tablet επιλογή. Αν έχει S Pen, έλεγξε ότι λειτουργεί κανονικά.",
+        risk:"low",
+        riskText:"Χαμηλό",
+        score:83,
+        search:"Samsung Galaxy Tab S9 FE",
+        image:"https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=900&q=80",
+        checks:["S Pen αν υπάρχει","Οθόνη","Θύρα φόρτισης"]
       },
       {
-        c:"Laptop",
-        t:"Lenovo IdeaPad Slim 3",
-        s:"οικονομικό laptop",
-        p:430,
-        v:510,
-        r:.16,
-        pop:74,
-        q:"Lenovo IdeaPad Slim 3",
-        g:["#1f2937","#22c55e"]
+        category:"Laptop",
+        name:"Apple MacBook Air M2",
+        text:"Πολύ καλή επιλογή αν είναι καθαρό και δεν έχει θέματα μπαταρίας. Έλεγξε κύκλους φόρτισης.",
+        risk:"low",
+        riskText:"Χαμηλό",
+        score:90,
+        search:"Apple MacBook Air M2",
+        image:"https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
+        checks:["Battery cycles","Οθόνη","iCloud / Find My εκτός"]
       },
       {
-        c:"Laptop",
-        t:"HP Victus 15",
-        s:"gaming laptop κατηγορίας εισόδου",
-        p:760,
-        v:850,
-        r:.18,
-        pop:78,
-        q:"HP Victus 15 gaming laptop",
-        g:["#450a0a","#ef4444"]
+        category:"Laptop",
+        name:"Lenovo IdeaPad Slim 3",
+        text:"Τίμια λύση για απλή δουλειά. Πρόσεξε RAM, δίσκο και κατάσταση μπαταρίας.",
+        risk:"medium",
+        riskText:"Μεσαίο",
+        score:70,
+        search:"Lenovo IdeaPad Slim 3",
+        image:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80",
+        checks:["SSD κατάσταση","Μπαταρία","Πληκτρολόγιο / θύρες"]
       },
       {
-        c:"Gadget",
-        t:"Sony WH-1000XM5",
-        s:"premium ασύρματα ακουστικά",
-        p:285,
-        v:345,
-        r:.09,
-        pop:89,
-        q:"Sony WH-1000XM5",
-        g:["#111827","#64748b"]
+        category:"Laptop",
+        name:"HP Victus 15",
+        text:"Gaming laptop, άρα θέλει παραπάνω έλεγχο. Θερμοκρασίες και χρήση παίζουν μεγάλο ρόλο.",
+        risk:"high",
+        riskText:"Υψηλό",
+        score:58,
+        search:"HP Victus 15",
+        image:"https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=900&q=80",
+        checks:["Θερμοκρασίες","GPU / παιχνίδια","Φορτιστής γνήσιος"]
       },
       {
-        c:"Gadget",
-        t:"Apple AirPods Pro 2 USB-C",
-        s:"ασύρματα ακουστικά Apple",
-        p:225,
-        v:280,
-        r:.13,
-        pop:91,
-        q:"Apple AirPods Pro 2 USB-C",
-        g:["#075985","#38bdf8"]
+        category:"Gadget",
+        name:"Sony WH-1000XM5",
+        text:"Πολύ καλά ακουστικά. Πρόσεξε μπαταρία, μαξιλαράκια και αν δουλεύει σωστά το noise cancelling.",
+        risk:"low",
+        riskText:"Χαμηλό",
+        score:85,
+        search:"Sony WH-1000XM5",
+        image:"https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=900&q=80",
+        checks:["Μπαταρία","Noise cancelling","Μαξιλαράκια"]
+      },
+      {
+        category:"Gadget",
+        name:"Apple AirPods Pro 2",
+        text:"Θέλει προσοχή γιατί υπάρχουν πολλές απομιμήσεις. Μην αγοράσεις αν κάτι φαίνεται περίεργο.",
+        risk:"medium",
+        riskText:"Μεσαίο",
+        score:72,
+        search:"Apple AirPods Pro 2 USB-C",
+        image:"https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=900&q=80",
+        checks:["Serial number","Θήκη και ακουστικά","Noise cancelling"]
       }
     ];
 
     const el = {
-      grid: document.getElementById("products"),
+      grid: document.getElementById("deviceGrid"),
       search: document.getElementById("search"),
-      cat: document.getElementById("category"),
-      sort: document.getElementById("sort"),
-      status: document.getElementById("status"),
-      results: document.getElementById("results"),
+      category: document.getElementById("category"),
+      riskSort: document.getElementById("riskSort"),
       heroScore: document.getElementById("heroScore"),
       toast: document.getElementById("toast")
     };
@@ -986,183 +903,134 @@
     function showToast(text){
       el.toast.textContent = text;
       el.toast.style.display = "block";
+
       setTimeout(() => {
         el.toast.style.display = "none";
       }, 1600);
     }
 
-    function baseScore(product){
-      const edge = product.v - product.p;
-      const score = 54 + edge * .22 + product.pop * .22 - product.r * 70;
-      return Math.max(5, Math.min(98, score));
+    function riskClass(risk){
+      if(risk === "low") return "low";
+      if(risk === "medium") return "medium";
+      return "high";
     }
 
-    function riskBadge(score){
-      if(score >= 78){
-        return '<span class="badge good">Low risk</span>';
-      }
-
-      if(score >= 62){
-        return '<span class="badge mid">Medium</span>';
-      }
-
-      return '<span class="badge bad">High risk</span>';
+    function riskWeight(risk){
+      if(risk === "low") return 1;
+      if(risk === "medium") return 2;
+      return 3;
     }
 
-    function render(){
-      const query = el.search.value.trim().toLowerCase();
-      const category = el.cat.value;
+    function renderDevices(){
+      const q = el.search.value.trim().toLowerCase();
+      const category = el.category.value;
 
-      let filtered = products.filter(product => {
-        const matchesCategory = category === "all" || product.c === category;
-        const text = (product.t + " " + product.s + " " + product.c).toLowerCase();
-        return matchesCategory && text.includes(query);
+      let list = devices.filter(device => {
+        const text = (device.name + " " + device.category + " " + device.text).toLowerCase();
+        const categoryOk = category === "all" || device.category === category;
+        return categoryOk && text.includes(q);
       });
 
-      filtered.sort((a,b) => {
-        if(el.sort.value === "price"){
-          return a.p - b.p;
+      list.sort((a,b) => {
+        if(el.riskSort.value === "low"){
+          return riskWeight(a.risk) - riskWeight(b.risk);
         }
 
-        if(el.sort.value === "risk"){
-          return a.r - b.r;
+        if(el.riskSort.value === "high"){
+          return riskWeight(b.risk) - riskWeight(a.risk);
         }
 
-        return baseScore(b) - baseScore(a);
+        return b.score - a.score;
       });
 
-      if(!filtered.length){
-        el.grid.innerHTML = '<p class="note">Δεν βρέθηκε προϊόν με αυτά τα φίλτρα.</p>';
+      if(!list.length){
+        el.grid.innerHTML = '<p class="note">Δεν βρέθηκε συσκευή με αυτά τα φίλτρα.</p>';
         return;
       }
 
-      el.grid.innerHTML = filtered.map(product => {
-        const score = baseScore(product).toFixed(0);
-
+      el.grid.innerHTML = list.map(device => {
         const emailBody =
           "Γεια σας,\n\n" +
-          "Ενδιαφέρομαι για: " + product.t + "\n" +
-          "Κατηγορία: " + product.c + "\n" +
-          "Ενδεικτική τιμή: από " + product.p + "€\n\n" +
-          "Στείλτε μου περισσότερες πληροφορίες.\n";
+          "Θέλω πληροφορίες για τη συσκευή: " + device.name + "\n" +
+          "Κατηγορία: " + device.category + "\n\n" +
+          "Θέλω να ξέρω αν αξίζει και τι να προσέξω.\n";
 
         return `
-          <article class="product">
-            <div class="product-img" style="background:linear-gradient(135deg,${product.g[0]},${product.g[1]})">
-              ${product.t}
-            </div>
+          <article class="device">
+            <img src="${device.image}" alt="${device.name}" loading="lazy">
 
-            <div class="product-row">
+            <div class="device-title">
               <div>
-                <h3>${product.t}</h3>
-                <p class="muted">${product.s}</p>
+                <span>${device.category}</span>
+                <h3>${device.name}</h3>
               </div>
-              <div class="price">από ${product.p}€</div>
+
+              <span class="risk ${riskClass(device.risk)}">${device.riskText} ρίσκο</span>
             </div>
 
-            <div class="product-meta">
-              <div><small>Κατηγορία</small><b>${product.c}</b></div>
-              <div><small>Ζήτηση</small><b>${product.pop}%</b></div>
-              <div><small>Ρίσκο</small><b>${Math.round(product.r * 100)}%</b></div>
-            </div>
+            <p>${device.text}</p>
 
-            <div class="score">
-              <small>ReGadget score</small>
-              <strong>${score}%</strong>
-              ${riskBadge(score)}
-            </div>
+            <ul class="checks">
+              ${device.checks.map(item => `<li>✓ ${item}</li>`).join("")}
+            </ul>
 
-            <div class="product-actions">
-              <a class="btn dark small" target="_blank" rel="noopener" href="${skroutzUrl(product.q)}">Skroutz</a>
+            <div class="device-actions">
+              <a class="btn dark small" target="_blank" rel="noopener" href="${skroutzUrl(device.search)}">Έλεγχος τιμής</a>
               <a class="btn small" target="_blank" rel="noopener" href="${flipUrl()}">Flip</a>
-              <a class="btn primary small" onclick="showToast('Άνοιγμα email...')" href="${mailUrl("Ενδιαφέρον για " + product.t, emailBody)}">Email</a>
+              <a class="btn primary small wide" onclick="showToast('Άνοιγμα email...')" href="${mailUrl("Ερώτηση για " + device.name, emailBody)}">Ρώτα με email</a>
             </div>
           </article>
         `;
       }).join("");
+
+      const best = [...list].sort((a,b) => b.score - a.score)[0];
+      if(best){
+        el.heroScore.textContent = best.score + "%";
+      }
     }
 
-    function analyse(){
-      const ranked = products.map(product => {
-        const score = baseScore(product);
-        const success = Math.max(5, Math.min(98, score + (Math.random() * 4 - 2)));
-        const risk = 100 - success;
-        const ev = (product.v - product.p) - (product.r * 85) + ((product.pop - 80) * .8);
+    document.querySelectorAll("[data-filter]").forEach(link => {
+      link.addEventListener("click", () => {
+        const filter = link.getAttribute("data-filter");
+        el.category.value = filter;
+        renderDevices();
+      });
+    });
 
-        let cluster = "Υψηλό ρίσκο";
-
-        if(success > 80){
-          cluster = "Premium επιλογή";
-        } else if(success > 65){
-          cluster = "Καλή επιλογή";
-        } else if(success > 50){
-          cluster = "Θέλει έλεγχο";
-        }
-
-        return {
-          ...product,
-          success,
-          risk,
-          ev,
-          cluster
-        };
-      }).sort((a,b) => b.success - a.success);
-
-      el.heroScore.textContent = ranked[0].success.toFixed(0) + "%";
-
-      el.results.innerHTML = ranked.slice(0,6).map((product, index) => {
-        return `
-          <div class="model-card">
-            <b>#${index + 1} ${product.t}</b>
-            <p class="muted">Cluster: ${product.cluster} • Ενδεικτικό EV: ${product.ev.toFixed(1)}€</p>
-            <p>Επιτυχία: <b>${product.success.toFixed(1)}%</b> | Κίνδυνος: <b>${product.risk.toFixed(1)}%</b></p>
-            <div class="bar"><span style="width:${product.success}%"></span></div>
-          </div>
-        `;
-      }).join("");
-
-      el.status.textContent = "Ολοκληρώθηκε η ενδεικτική ανάλυση.";
-    }
+    ["input","change"].forEach(eventName => {
+      el.search.addEventListener(eventName, renderDevices);
+      el.category.addEventListener(eventName, renderDevices);
+      el.riskSort.addEventListener(eventName, renderDevices);
+    });
 
     document.getElementById("sellForm").addEventListener("submit", function(event){
       event.preventDefault();
 
-      const data = {
-        category: document.getElementById("sellCategory").value,
-        model: document.getElementById("sellModel").value,
-        price: document.getElementById("sellPrice").value,
-        condition: document.getElementById("sellCondition").value,
-        battery: document.getElementById("sellBattery").value,
-        area: document.getElementById("sellArea").value,
-        notes: document.getElementById("sellNotes").value
-      };
+      const category = document.getElementById("sellCategory").value;
+      const model = document.getElementById("sellModel").value;
+      const condition = document.getElementById("sellCondition").value;
+      const battery = document.getElementById("sellBattery").value;
+      const area = document.getElementById("sellArea").value;
+      const price = document.getElementById("sellPrice").value;
+      const notes = document.getElementById("sellNotes").value;
 
       const body =
         "Γεια σας,\n\n" +
-        "Θέλω να πουλήσω συσκευή στο ReGadget Market.\n\n" +
-        "Κατηγορία: " + data.category + "\n" +
-        "Μοντέλο: " + data.model + "\n" +
-        "Τιμή που ζητάω: " + data.price + "\n" +
-        "Κατάσταση: " + data.condition + "\n" +
-        "Μπαταρία / χρήση: " + data.battery + "\n" +
-        "Περιοχή: " + data.area + "\n" +
-        "Περιγραφή: " + data.notes + "\n\n" +
+        "Θέλω να πουλήσω συσκευή.\n\n" +
+        "Κατηγορία: " + category + "\n" +
+        "Μοντέλο: " + model + "\n" +
+        "Κατάσταση: " + condition + "\n" +
+        "Μπαταρία / χρήση: " + battery + "\n" +
+        "Περιοχή: " + area + "\n" +
+        "Τιμή που σκέφτομαι: " + price + "\n" +
+        "Περιγραφή: " + notes + "\n\n" +
         "Ευχαριστώ.";
 
       showToast("Άνοιγμα email...");
-      window.location.href = mailUrl("Νέα συσκευή προς πώληση - " + data.model, body);
+      window.location.href = mailUrl("Συσκευή προς πώληση - " + model, body);
     });
 
-    ["input","change"].forEach(eventName => {
-      el.search.addEventListener(eventName, render);
-      el.cat.addEventListener(eventName, render);
-      el.sort.addEventListener(eventName, render);
-    });
-
-    document.getElementById("run").onclick = analyse;
-
-    render();
-    analyse();
+    renderDevices();
   </script>
 </body>
 </html>
