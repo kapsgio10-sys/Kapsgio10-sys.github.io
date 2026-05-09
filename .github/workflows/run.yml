@@ -1,29 +1,20 @@
 name: Run OpenAI Test
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
-  run:
+  test:
     runs-on: ubuntu-latest
-
-    env:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
     steps:
       - name: Get code
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
       - name: Install OpenAI
         run: pip install openai
 
-      - name: Run app
+      - name: Run Python
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python app.py
