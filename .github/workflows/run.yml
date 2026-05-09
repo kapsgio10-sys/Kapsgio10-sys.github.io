@@ -17,4 +17,4 @@ jobs:
       - name: Run Python
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python app.py
+        run: python openai-test
