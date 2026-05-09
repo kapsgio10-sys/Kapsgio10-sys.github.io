@@ -1,0 +1,19 @@
+app.py
+import os
+from openai import OpenAI
+
+api_key = os.getenv("OPENAI_API_KEY")
+
+if not api_key:
+    print("Λείπει το OPENAI_API_KEY.")
+    print("Πρέπει να το βάλεις στα GitHub Secrets.")
+    exit()
+
+client = OpenAI(api_key=api_key)
+
+response = client.responses.create(
+    model="gpt-4.1-mini",
+    input="Πες μου καλημέρα στα ελληνικά."
+)
+
+print(response.output_text)
