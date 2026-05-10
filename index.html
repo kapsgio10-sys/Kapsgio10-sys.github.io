@@ -4,68 +4,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>ReGadget Market | Marketplace Μεταχειρισμένων Συσκευών</title>
-  <meta name="description" content="ReGadget Market - αγορά και πώληση μεταχειρισμένων κινητών, laptop, tablets και gadgets στην Ελλάδα." />
+  <title>Gadgetora | Μεταχειρισμένα & Refurbished Tech στην Ελλάδα</title>
+  <meta name="description" content="Gadgetora - ελληνικό marketplace για μεταχειρισμένα κινητά, refurbished συσκευές, laptop, tablets, gaming, audio και accessories. Καθαρές αγγελίες, πραγματικά στοιχεία και άμεση επικοινωνία." />
+  <meta name="keywords" content="μεταχειρισμένα κινητά, refurbished συσκευές, μεταχειρισμένα laptop, αγγελίες κινητών, αγορά iPhone μεταχειρισμένο, πώληση κινητού, μεταχειρισμένα gadgets Ελλάδα" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Gadgetora | Μεταχειρισμένα & Refurbished Tech" />
+  <meta property="og:description" content="Βρες ή πούλησε μεταχειρισμένες και refurbished tech συσκευές στην Ελλάδα με καθαρές αγγελίες και πραγματικά στοιχεία." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="el_GR" />
 
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     html { scroll-behavior: smooth; }
     body { -webkit-font-smoothing: antialiased; }
-    .glass {
-      background: rgba(15, 23, 42, 0.76);
-      backdrop-filter: blur(18px);
-    }
-    .card-glow {
-      box-shadow: 0 30px 80px rgba(37, 99, 235, 0.18);
-    }
+    .glass { background: rgba(15, 23, 42, 0.78); backdrop-filter: blur(18px); }
+    .soft-shadow { box-shadow: 0 24px 80px rgba(15, 23, 42, 0.14); }
+    .blue-glow { box-shadow: 0 20px 70px rgba(37, 99, 235, 0.22); }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Gadgetora",
+    "description": "Ελληνικό marketplace για μεταχειρισμένα και refurbished tech προϊόντα.",
+    "inLanguage": "el-GR",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://kapsgio10-sys.github.io/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 
 <body class="bg-slate-950 text-white font-sans">
-
   <header class="sticky top-0 z-50 glass border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
       <a href="#top" class="flex items-center gap-3">
-        <div class="w-11 h-11 rounded-2xl bg-blue-500 grid place-items-center font-black text-xl">
-          R
-        </div>
+        <div class="w-11 h-11 rounded-2xl bg-blue-500 grid place-items-center font-black text-xl">G</div>
         <div>
-          <h1 class="font-black text-xl leading-none">ReGadget</h1>
-          <p class="text-xs text-slate-400">Market</p>
+          <h1 class="font-black text-xl leading-none">Gadgetora</h1>
+          <p class="text-xs text-slate-400">Tech Marketplace</p>
         </div>
       </a>
 
       <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
         <a href="#market" class="hover:text-white">Αγγελίες</a>
+        <a href="#categories" class="hover:text-white">Κατηγορίες</a>
         <a href="#sell" class="hover:text-white">Πώληση</a>
-        <a href="#how" class="hover:text-white">Πώς δουλεύει</a>
+        <a href="#trust" class="hover:text-white">Ασφάλεια</a>
         <a href="#contact" class="hover:text-white">Επικοινωνία</a>
       </nav>
 
       <a href="#sell" class="bg-white text-slate-950 px-4 py-3 rounded-2xl font-black text-sm">
-        Βάλε αγγελία
+        Πούλησε τώρα
       </a>
     </div>
   </header>
 
   <section id="top" class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,.35),_transparent_35%),radial-gradient(circle_at_top_right,_rgba(20,184,166,.25),_transparent_35%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,.35),_transparent_35%),radial-gradient(circle_at_top_right,_rgba(16,185,129,.22),_transparent_35%)]"></div>
 
     <div class="relative max-w-7xl mx-auto px-4 py-16 md:py-24 grid lg:grid-cols-2 gap-10 items-center">
       <div>
         <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm text-slate-300 mb-6">
           <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-          Marketplace για μεταχειρισμένες συσκευές
+          Ελληνικό marketplace για used & refurbished tech
         </div>
 
         <h2 class="text-4xl md:text-6xl font-black leading-tight">
-          Αγόρασε και πούλησε κινητά, laptop και gadgets πιο καθαρά.
+          Βρες την καλύτερη συσκευή, καθαρά και γρήγορα.
         </h2>
 
         <p class="mt-6 text-lg text-slate-300 max-w-2xl leading-relaxed">
-          Αγγελίες με φίλτρα, κατάσταση, μπαταρία, τιμή και άμεση επικοινωνία.
-          Όχι άλλο “είναι πένα φίλε” με φωτογραφία τραβηγμένη από πατάτα.
+          Το Gadgetora είναι marketplace για μεταχειρισμένα κινητά, refurbished συσκευές,
+          μεταχειρισμένα laptop, tablets, gaming, audio και accessories στην Ελλάδα.
+          Χωρίς ψεύτικες τιμές. Οι πραγματικές τιμές μπαίνουν από πραγματικές καταχωρήσεις πωλητών.
         </p>
 
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
@@ -77,67 +94,58 @@
           </a>
         </div>
 
-        <div class="mt-8 grid grid-cols-3 gap-3 max-w-xl">
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
           <div class="rounded-2xl bg-white/10 border border-white/10 p-4">
-            <p id="statListings" class="text-2xl font-black">0</p>
-            <p class="text-xs text-slate-400">αγγελίες</p>
+            <p class="font-black">Ελεγμένες</p>
+            <p class="text-xs text-slate-400 mt-1">αγγελίες</p>
           </div>
           <div class="rounded-2xl bg-white/10 border border-white/10 p-4">
-            <p class="text-2xl font-black">24h</p>
-            <p class="text-xs text-slate-400">επικοινωνία</p>
+            <p class="font-black">Πραγματικές</p>
+            <p class="text-xs text-slate-400 mt-1">καταχωρήσεις</p>
           </div>
           <div class="rounded-2xl bg-white/10 border border-white/10 p-4">
-            <p class="text-2xl font-black">GR</p>
-            <p class="text-xs text-slate-400">Ελλάδα</p>
+            <p class="font-black">Άμεση</p>
+            <p class="text-xs text-slate-400 mt-1">επικοινωνία</p>
+          </div>
+          <div class="rounded-2xl bg-white/10 border border-white/10 p-4">
+            <p class="font-black">Λιγότερο</p>
+            <p class="text-xs text-slate-400 mt-1">ρίσκο</p>
           </div>
         </div>
       </div>
 
-      <div class="bg-white text-slate-950 rounded-[2rem] p-6 card-glow">
-        <div class="flex items-start justify-between gap-4 mb-5">
-          <div>
-            <p class="text-sm text-slate-500">Προτεινόμενη αγγελία</p>
-            <h3 class="text-3xl font-black">iPhone 14 Pro</h3>
-          </div>
-          <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full font-black text-sm">
-            Ελεγμένο
-          </span>
-        </div>
+      <div class="bg-white text-slate-950 rounded-[2rem] p-6 blue-glow">
+        <p class="text-sm text-slate-500 font-bold">Marketplace preview</p>
+        <h3 class="text-3xl font-black mt-1">Πραγματικές αγγελίες, όχι βιτρίνα φαντασίας</h3>
+        <p class="text-slate-600 mt-4 leading-relaxed">
+          Όταν καταχωρηθούν πραγματικές συσκευές, εδώ θα εμφανίζονται με κατάσταση,
+          περιοχή, στοιχεία πωλητή και τιμή που ορίζει ο ίδιος ο πωλητής.
+        </p>
 
-        <div class="h-72 rounded-3xl bg-gradient-to-br from-slate-900 via-blue-700 to-cyan-400 grid place-items-center mb-5">
-          <div class="w-32 h-60 rounded-[2rem] bg-slate-950 border-4 border-slate-700 relative shadow-2xl">
-            <div class="absolute top-3 left-1/2 -translate-x-1/2 w-14 h-5 bg-black rounded-full"></div>
-            <div class="absolute inset-5 top-12 rounded-2xl bg-gradient-to-br from-blue-300 to-cyan-100"></div>
+        <div class="mt-6 rounded-3xl bg-slate-950 text-white p-5">
+          <div class="flex items-center justify-between gap-3">
+            <div>
+              <p class="text-xs text-emerald-300 font-black uppercase tracking-widest">Trust notice</p>
+              <h4 class="text-xl font-black mt-1">Καμία ψεύτικη τιμή</h4>
+            </div>
+            <span class="bg-emerald-400 text-slate-950 px-3 py-1 rounded-full text-xs font-black">CLEAR</span>
           </div>
-        </div>
-
-        <div class="grid grid-cols-3 gap-3 text-center">
-          <div class="bg-slate-100 rounded-2xl p-3">
-            <p class="text-xs text-slate-500">Τιμή</p>
-            <p class="font-black">679€</p>
-          </div>
-          <div class="bg-slate-100 rounded-2xl p-3">
-            <p class="text-xs text-slate-500">Μπαταρία</p>
-            <p class="font-black">91%</p>
-          </div>
-          <div class="bg-slate-100 rounded-2xl p-3">
-            <p class="text-xs text-slate-500">Περιοχή</p>
-            <p class="font-black">Αθήνα</p>
-          </div>
+          <p class="text-slate-300 mt-3 text-sm">
+            Οι τιμές εμφανίζονται μόνο από επιβεβαιωμένες καταχωρήσεις ή ελεγμένα δεδομένα.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <main class="bg-slate-50 text-slate-950">
-
     <section id="market" class="max-w-7xl mx-auto px-4 py-16">
       <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-8">
         <div>
           <p class="text-blue-600 font-black uppercase tracking-widest text-sm">Marketplace</p>
           <h2 class="text-4xl md:text-5xl font-black mt-2">Αγγελίες συσκευών</h2>
           <p class="text-slate-600 mt-4 max-w-2xl">
-            Αναζήτηση, φίλτρα, λεπτομέρειες και φόρμα αγγελίας. Αυτό είναι MVP marketplace, όχι απλή βιτρίνα.
+            Οι πραγματικές αγγελίες θα εμφανίζονται εδώ μετά από καταχώρηση. Δεν εμφανίζουμε demo τιμές σαν να είναι αληθινές.
           </p>
         </div>
 
@@ -146,21 +154,22 @@
         </a>
       </div>
 
-      <div class="bg-white border border-slate-200 rounded-[2rem] p-4 md:p-5 mb-8 grid lg:grid-cols-5 gap-3 shadow-sm">
+      <div class="bg-white border border-slate-200 rounded-[2rem] p-4 md:p-5 mb-8 grid lg:grid-cols-5 gap-3 soft-shadow">
         <input id="searchInput" class="lg:col-span-2 rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Αναζήτηση π.χ. iPhone, Samsung, laptop" />
 
         <select id="categoryFilter" class="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500">
           <option value="all">Όλες οι κατηγορίες</option>
-          <option value="iPhone">iPhone</option>
-          <option value="Samsung">Samsung</option>
+          <option value="Κινητά">Κινητά</option>
           <option value="Laptop">Laptop</option>
           <option value="Tablet">Tablet</option>
+          <option value="Gaming">Gaming</option>
           <option value="Audio">Audio</option>
+          <option value="Accessories">Accessories</option>
         </select>
 
         <select id="conditionFilter" class="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500">
           <option value="all">Όλες οι καταστάσεις</option>
-          <option value="Άριστο">Άριστο</option>
+          <option value="Άριστη">Άριστη</option>
           <option value="Πολύ καλή">Πολύ καλή</option>
           <option value="Καλή">Καλή</option>
         </select>
@@ -169,122 +178,94 @@
           <option value="newest">Νεότερα</option>
           <option value="priceAsc">Τιμή χαμηλά</option>
           <option value="priceDesc">Τιμή ψηλά</option>
-          <option value="riskAsc">Χαμηλό ρίσκο</option>
         </select>
       </div>
 
       <div id="listingGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
-      <p id="emptyState" class="hidden text-center text-slate-500 py-10">
-        Δεν βρέθηκαν αγγελίες.
-      </p>
+      <div id="emptyState" class="text-center bg-white border border-slate-200 rounded-[2rem] p-10 soft-shadow">
+        <p class="text-blue-600 font-black uppercase tracking-widest text-sm">Δεν υπάρχουν ακόμα επιβεβαιωμένες αγγελίες</p>
+        <h3 class="text-3xl font-black mt-3">Γίνε από τους πρώτους πωλητές στο Gadgetora</h3>
+        <p class="text-slate-600 mt-4 max-w-2xl mx-auto">
+          Μόλις καταχωρηθούν πραγματικές συσκευές, θα εμφανιστούν εδώ με τιμή, περιοχή, κατάσταση και στοιχεία επικοινωνίας.
+        </p>
+        <a href="#sell" class="inline-block mt-6 bg-blue-600 text-white px-7 py-4 rounded-2xl font-black">
+          Καταχώρησε συσκευή
+        </a>
+      </div>
+    </section>
+
+    <section id="categories" class="max-w-7xl mx-auto px-4 py-16">
+      <p class="text-blue-600 font-black uppercase tracking-widest text-sm">Κατηγορίες</p>
+      <h2 class="text-4xl md:text-5xl font-black mt-2">Βρες συσκευές ανά κατηγορία</h2>
+
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 soft-shadow"><h3 class="font-black text-xl">Κινητά</h3><p class="text-slate-600 mt-2">iPhone, Samsung και άλλα smartphones.</p></div>
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 soft-shadow"><h3 class="font-black text-xl">Laptop</h3><p class="text-slate-600 mt-2">MacBook, Windows laptops και επαγγελματικές συσκευές.</p></div>
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 soft-shadow"><h3 class="font-black text-xl">Tablets</h3><p class="text-slate-600 mt-2">iPad και Android tablets.</p></div>
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 soft-shadow"><h3 class="font-black text-xl">Gaming</h3><p class="text-slate-600 mt-2">Κονσόλες, χειριστήρια και αξεσουάρ.</p></div>
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 soft-shadow"><h3 class="font-black text-xl">Smartwatches</h3><p class="text-slate-600 mt-2">Apple Watch, Galaxy Watch και wearables.</p></div>
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 soft-shadow"><h3 class="font-black text-xl">Audio</h3><p class="text-slate-600 mt-2">AirPods, ακουστικά και ηχεία.</p></div>
+        <div class="bg-white rounded-3xl p-6 border border-slate-200 soft-shadow"><h3 class="font-black text-xl">Accessories</h3><p class="text-slate-600 mt-2">Θήκες, φορτιστές και περιφερειακά.</p></div>
+        <div class="bg-slate-950 text-white rounded-3xl p-6 soft-shadow"><h3 class="font-black text-xl">Νέα κατηγορία;</h3><p class="text-slate-300 mt-2">Στείλε μας τι θέλεις να προστεθεί.</p></div>
+      </div>
     </section>
 
     <section id="sell" class="max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-10 items-start">
       <div>
         <p class="text-blue-600 font-black uppercase tracking-widest text-sm">Πώληση</p>
-        <h2 class="text-4xl md:text-5xl font-black mt-2">Βάλε συσκευή για πώληση</h2>
+        <h2 class="text-4xl md:text-5xl font-black mt-2">Πούλησε τη συσκευή σου</h2>
         <p class="text-slate-600 mt-5 leading-relaxed">
-          Συμπλήρωσε τη φόρμα. Η αγγελία εμφανίζεται στη σελίδα και αποθηκεύεται στον browser σου.
-          Για μόνιμη βάση χρηστών/αγγελιών μετά πάμε σε Supabase, γιατί το GitHub δεν είναι βάση δεδομένων, όσο κι αν κάνει πως είναι χρήσιμο.
+          Συμπλήρωσε πραγματικά στοιχεία. Η τιμή ορίζεται από εσένα και η αγγελία αποστέλλεται με email για έλεγχο.
+          Αυτή η δωρεάν GitHub Pages έκδοση δεν έχει βάση δεδομένων, οπότε η καταχώρηση γίνεται μέσω email.
         </p>
 
         <div class="mt-6 rounded-3xl bg-slate-950 text-white p-6">
-          <h3 class="font-black text-xl">Τι κάνει αυτή η έκδοση</h3>
+          <h3 class="font-black text-xl">Τι πρέπει να βάλεις</h3>
           <ul class="mt-4 space-y-2 text-slate-300 text-sm">
-            <li>• Προσθήκη αγγελίας</li>
-            <li>• Αναζήτηση και φίλτρα</li>
-            <li>• Τοπική αποθήκευση στον browser</li>
-            <li>• Email ενδιαφέροντος</li>
-            <li>• Responsive design</li>
+            <li>• Μοντέλο και κατηγορία</li>
+            <li>• Πραγματική κατάσταση συσκευής</li>
+            <li>• Τιμή που ζητάς</li>
+            <li>• Περιοχή και στοιχεία επικοινωνίας</li>
+            <li>• Μπαταρία/αποθηκευτικός χώρος αν υπάρχουν</li>
           </ul>
         </div>
       </div>
 
-      <form id="sellForm" class="bg-white rounded-[2rem] p-6 md:p-8 border border-slate-200 shadow-sm">
+      <form id="sellForm" class="bg-white rounded-[2rem] p-6 md:p-8 border border-slate-200 soft-shadow">
         <div class="grid sm:grid-cols-2 gap-4">
-          <label>
-            <span class="text-sm font-bold text-slate-700">Μοντέλο</span>
-            <input id="model" required class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. iPhone 13 Pro">
-          </label>
-
-          <label>
-            <span class="text-sm font-bold text-slate-700">Κατηγορία</span>
-            <select id="category" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500">
-              <option>iPhone</option>
-              <option>Samsung</option>
-              <option>Laptop</option>
-              <option>Tablet</option>
-              <option>Audio</option>
-            </select>
-          </label>
-
-          <label>
-            <span class="text-sm font-bold text-slate-700">Τιμή €</span>
-            <input id="price" required type="number" min="1" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. 540">
-          </label>
-
-          <label>
-            <span class="text-sm font-bold text-slate-700">Μπαταρία %</span>
-            <input id="battery" type="number" min="0" max="100" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. 88">
-          </label>
-
-          <label>
-            <span class="text-sm font-bold text-slate-700">Κατάσταση</span>
-            <select id="condition" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500">
-              <option>Άριστο</option>
-              <option>Πολύ καλή</option>
-              <option>Καλή</option>
-            </select>
-          </label>
-
-          <label>
-            <span class="text-sm font-bold text-slate-700">Περιοχή</span>
-            <input id="location" required class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. Θεσσαλονίκη">
-          </label>
-
-          <label>
-            <span class="text-sm font-bold text-slate-700">Όνομα</span>
-            <input id="seller" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. Γιώργος">
-          </label>
-
-          <label>
-            <span class="text-sm font-bold text-slate-700">Τηλέφωνο ή email</span>
-            <input id="contactInfo" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. email ή κινητό">
-          </label>
+          <label><span class="text-sm font-bold text-slate-700">Μοντέλο</span><input id="model" required class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. iPhone 13 Pro"></label>
+          <label><span class="text-sm font-bold text-slate-700">Κατηγορία</span><select id="category" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"><option>Κινητά</option><option>Laptop</option><option>Tablet</option><option>Gaming</option><option>Audio</option><option>Accessories</option></select></label>
+          <label><span class="text-sm font-bold text-slate-700">Τιμή €</span><input id="price" required type="number" min="1" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. 540"></label>
+          <label><span class="text-sm font-bold text-slate-700">Μπαταρία %</span><input id="battery" type="number" min="0" max="100" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. 88"></label>
+          <label><span class="text-sm font-bold text-slate-700">Κατάσταση</span><select id="condition" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500"><option>Άριστη</option><option>Πολύ καλή</option><option>Καλή</option></select></label>
+          <label><span class="text-sm font-bold text-slate-700">Περιοχή</span><input id="location" required class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. Θεσσαλονίκη"></label>
+          <label><span class="text-sm font-bold text-slate-700">Όνομα</span><input id="seller" required class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. Γιώργος"></label>
+          <label><span class="text-sm font-bold text-slate-700">Τηλέφωνο ή email</span><input id="contactInfo" required class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="π.χ. email ή κινητό"></label>
         </div>
 
         <label class="block mt-4">
           <span class="text-sm font-bold text-slate-700">Περιγραφή</span>
-          <textarea id="description" rows="4" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Κουτί, απόδειξη, εγγύηση, σημάδια κτλ."></textarea>
+          <textarea id="description" rows="4" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500" placeholder="Κουτί, απόδειξη, εγγύηση, σημάδια, αποθηκευτικός χώρος κτλ."></textarea>
         </label>
 
         <button class="mt-5 w-full bg-blue-600 hover:bg-blue-500 text-white rounded-2xl px-6 py-4 font-black">
-          Δημιουργία αγγελίας
+          Υποβολή αγγελίας για έλεγχο
         </button>
 
         <p id="formMessage" class="mt-4 text-sm text-slate-500"></p>
       </form>
     </section>
 
-    <section id="how" class="max-w-7xl mx-auto px-4 py-16">
-      <div class="grid lg:grid-cols-3 gap-5">
-        <div class="bg-white rounded-3xl p-6 border border-slate-200">
-          <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white grid place-items-center font-black mb-5">1</div>
-          <h3 class="font-black text-xl">Βάζεις αγγελία</h3>
-          <p class="text-slate-600 mt-3">Μοντέλο, τιμή, κατάσταση και στοιχεία επικοινωνίας.</p>
-        </div>
-
-        <div class="bg-white rounded-3xl p-6 border border-slate-200">
-          <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white grid place-items-center font-black mb-5">2</div>
-          <h3 class="font-black text-xl">Φαίνεται στο marketplace</h3>
-          <p class="text-slate-600 mt-3">Η αγγελία εμφανίζεται στη λίστα με φίλτρα και αναζήτηση.</p>
-        </div>
-
-        <div class="bg-white rounded-3xl p-6 border border-slate-200">
-          <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white grid place-items-center font-black mb-5">3</div>
-          <h3 class="font-black text-xl">Γίνεται επικοινωνία</h3>
-          <p class="text-slate-600 mt-3">Ο αγοραστής ανοίγει έτοιμο email ενδιαφέροντος.</p>
+    <section id="trust" class="max-w-7xl mx-auto px-4 py-16">
+      <div class="rounded-[2rem] bg-slate-950 text-white p-8 md:p-12">
+        <p class="text-emerald-300 font-black uppercase tracking-widest text-sm">Ασφάλεια</p>
+        <h2 class="text-3xl md:text-5xl font-black mt-2">Τι να προσέξεις πριν αγοράσεις</h2>
+        <div class="mt-8 grid md:grid-cols-4 gap-5">
+          <div class="bg-white/10 border border-white/10 rounded-3xl p-5"><h3 class="font-black">Κατάσταση</h3><p class="text-slate-300 mt-2 text-sm">Ζήτησε καθαρές φωτογραφίες και περιγραφή σημαδιών.</p></div>
+          <div class="bg-white/10 border border-white/10 rounded-3xl p-5"><h3 class="font-black">Μπαταρία</h3><p class="text-slate-300 mt-2 text-sm">Σε κινητά/tablets έλεγξε battery health όπου υπάρχει.</p></div>
+          <div class="bg-white/10 border border-white/10 rounded-3xl p-5"><h3 class="font-black">Απόδειξη</h3><p class="text-slate-300 mt-2 text-sm">Προτίμησε συσκευές με απόδειξη ή εγγύηση.</p></div>
+          <div class="bg-white/10 border border-white/10 rounded-3xl p-5"><h3 class="font-black">Επικοινωνία</h3><p class="text-slate-300 mt-2 text-sm">Μίλα καθαρά με τον πωλητή πριν προχωρήσεις.</p></div>
         </div>
       </div>
     </section>
@@ -292,207 +273,71 @@
     <section id="contact" class="max-w-7xl mx-auto px-4 pb-20">
       <div class="rounded-[2rem] bg-blue-600 text-white p-8 md:p-12 flex flex-col lg:flex-row gap-6 lg:items-center lg:justify-between">
         <div>
-          <h2 class="text-3xl md:text-4xl font-black">Θες να πουλήσεις συσκευή;</h2>
-          <p class="text-blue-100 mt-3">Στείλε στοιχεία ή χρησιμοποίησε τη φόρμα αγγελίας.</p>
+          <h2 class="text-3xl md:text-4xl font-black">Επικοινωνία Gadgetora</h2>
+          <p class="text-blue-100 mt-3">Για αγγελίες, συνεργασίες ή υποστήριξη, στείλε μήνυμα.</p>
         </div>
 
-        <a href="mailto:kapsgio10@gmail.com?subject=ReGadget%20Market%20-%20Επικοινωνία" class="bg-white text-blue-700 px-7 py-4 rounded-2xl font-black text-center">
-          Email επικοινωνίας
+        <a href="mailto:kapsgio10@gmail.com?subject=Gadgetora%20-%20Επικοινωνία" class="bg-white text-blue-700 px-7 py-4 rounded-2xl font-black text-center">
+          kapsgio10@gmail.com
         </a>
       </div>
     </section>
-
   </main>
-
-  <div id="modal" class="fixed inset-0 hidden z-[80] bg-black/70 p-4 items-center justify-center">
-    <div class="bg-white text-slate-950 rounded-[2rem] max-w-2xl w-full p-6 relative">
-      <button id="closeModal" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-slate-100 font-black">×</button>
-      <div id="modalContent"></div>
-    </div>
-  </div>
 
   <footer class="bg-slate-950 text-slate-400 px-4 py-10">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-4 text-sm">
-      <p>© 2026 ReGadget Market</p>
-      <p>Marketplace MVP. Το σοβαρέψαμε λίγο, επιτέλους.</p>
+      <p>© 2026 Gadgetora</p>
+      <p>Δωρεάν GitHub Pages MVP. Οι αγγελίες αποστέλλονται μέσω email.</p>
     </div>
   </footer>
 
   <script>
     const ADMIN_EMAIL = "kapsgio10@gmail.com";
-
-    const starterListings = [
-      {
-        id: 1,
-        title: "iPhone 14 Pro",
-        category: "iPhone",
-        price: 679,
-        battery: 91,
-        condition: "Άριστο",
-        location: "Αθήνα",
-        seller: "ReGadget",
-        contact: ADMIN_EMAIL,
-        description: "128GB, πολύ προσεγμένο, πλήρως λειτουργικό.",
-        createdAt: "2026-01-10",
-        risk: 12
-      },
-      {
-        id: 2,
-        title: "iPhone 13 Pro",
-        category: "iPhone",
-        price: 540,
-        battery: 88,
-        condition: "Πολύ καλή",
-        location: "Θεσσαλονίκη",
-        seller: "ReGadget",
-        contact: ADMIN_EMAIL,
-        description: "128GB, μικρά σημάδια χρήσης, μπαταρία 88%.",
-        createdAt: "2026-01-08",
-        risk: 18
-      },
-      {
-        id: 3,
-        title: "Samsung Galaxy S23",
-        category: "Samsung",
-        price: 490,
-        battery: 94,
-        condition: "Άριστο",
-        location: "Πάτρα",
-        seller: "ReGadget",
-        contact: ADMIN_EMAIL,
-        description: "256GB, άριστη κατάσταση.",
-        createdAt: "2026-01-07",
-        risk: 14
-      },
-      {
-        id: 4,
-        title: "MacBook Air M1",
-        category: "Laptop",
-        price: 620,
-        battery: 87,
-        condition: "Πολύ καλή",
-        location: "Αθήνα",
-        seller: "ReGadget",
-        contact: ADMIN_EMAIL,
-        description: "8GB RAM, 256GB SSD, ιδανικό για δουλειά.",
-        createdAt: "2026-01-05",
-        risk: 21
-      },
-      {
-        id: 5,
-        title: "iPad Air 5",
-        category: "Tablet",
-        price: 430,
-        battery: 92,
-        condition: "Άριστο",
-        location: "Ηράκλειο",
-        seller: "ReGadget",
-        contact: ADMIN_EMAIL,
-        description: "64GB Wi-Fi, καθαρό, με θήκη.",
-        createdAt: "2026-01-04",
-        risk: 16
-      },
-      {
-        id: 6,
-        title: "AirPods Pro 2",
-        category: "Audio",
-        price: 155,
-        battery: 90,
-        condition: "Καλή",
-        location: "Λάρισα",
-        seller: "ReGadget",
-        contact: ADMIN_EMAIL,
-        description: "USB-C case, καλή λειτουργία.",
-        createdAt: "2026-01-02",
-        risk: 24
-      }
-    ];
-
-    const savedListings = JSON.parse(localStorage.getItem("regadget_listings") || "[]");
-    let listings = [...savedListings, ...starterListings];
+    let listings = [];
 
     const grid = document.getElementById("listingGrid");
     const emptyState = document.getElementById("emptyState");
-    const statListings = document.getElementById("statListings");
     const searchInput = document.getElementById("searchInput");
     const categoryFilter = document.getElementById("categoryFilter");
     const conditionFilter = document.getElementById("conditionFilter");
     const sortSelect = document.getElementById("sortSelect");
-    const modal = document.getElementById("modal");
-    const modalContent = document.getElementById("modalContent");
-
-    function euro(value) {
-      return Number(value || 0).toLocaleString("el-GR") + "€";
-    }
 
     function escapeHtml(text) {
       return String(text || "").replace(/[&<>"']/g, function(match) {
-        return {
-          "&": "&amp;",
-          "<": "&lt;",
-          ">": "&gt;",
-          "\"": "&quot;",
-          "'": "&#039;"
-        }[match];
+        return {"&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#039;"}[match];
       });
     }
 
-    function riskLabel(risk) {
-      if (risk <= 15) return "Χαμηλό";
-      if (risk <= 25) return "Μεσαίο";
-      return "Υψηλό";
+    function euro(value) {
+      return Number(value || 0).toLocaleString("el-GR") + "€";
     }
 
     function filteredListings() {
       const query = searchInput.value.toLowerCase().trim();
 
       let data = listings.filter(function(item) {
-        const text = [
-          item.title,
-          item.category,
-          item.location,
-          item.description,
-          item.condition
-        ].join(" ").toLowerCase();
-
+        const text = [item.title, item.category, item.location, item.description, item.condition].join(" ").toLowerCase();
         const matchesSearch = !query || text.includes(query);
         const matchesCategory = categoryFilter.value === "all" || item.category === categoryFilter.value;
         const matchesCondition = conditionFilter.value === "all" || item.condition === conditionFilter.value;
-
         return matchesSearch && matchesCategory && matchesCondition;
       });
 
-      if (sortSelect.value === "priceAsc") {
-        data.sort((a, b) => a.price - b.price);
-      }
-
-      if (sortSelect.value === "priceDesc") {
-        data.sort((a, b) => b.price - a.price);
-      }
-
-      if (sortSelect.value === "riskAsc") {
-        data.sort((a, b) => a.risk - b.risk);
-      }
-
-      if (sortSelect.value === "newest") {
-        data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-      }
+      if (sortSelect.value === "priceAsc") data.sort((a, b) => a.price - b.price);
+      if (sortSelect.value === "priceDesc") data.sort((a, b) => b.price - a.price);
+      if (sortSelect.value === "newest") data.sort((a, b) => b.id - a.id);
 
       return data;
     }
 
     function renderListings() {
       const data = filteredListings();
-
-      statListings.textContent = listings.length;
       grid.innerHTML = "";
       emptyState.classList.toggle("hidden", data.length !== 0);
 
       data.forEach(function(item) {
         const card = document.createElement("article");
-
-        card.className = "bg-white rounded-3xl p-5 border border-slate-200 shadow-sm hover:-translate-y-1 transition";
-
+        card.className = "bg-white rounded-3xl p-5 border border-slate-200 soft-shadow hover:-translate-y-1 transition";
         card.innerHTML = `
           <div class="h-48 rounded-3xl bg-gradient-to-br from-slate-900 via-blue-700 to-cyan-400 mb-5 grid place-items-center text-white text-center px-4">
             <div>
@@ -500,165 +345,61 @@
               <p class="text-sm text-white/80 mt-1">${escapeHtml(item.category)}</p>
             </div>
           </div>
-
           <div class="flex items-start justify-between gap-3">
             <div>
               <h3 class="font-black text-xl">${escapeHtml(item.title)}</h3>
               <p class="text-sm text-slate-500 mt-1">${escapeHtml(item.condition)} • ${escapeHtml(item.location)}</p>
             </div>
-            <span class="bg-blue-50 text-blue-700 rounded-full px-3 py-1 text-sm font-black">
-              ${euro(item.price)}
-            </span>
+            <span class="bg-blue-50 text-blue-700 rounded-full px-3 py-1 text-sm font-black">${euro(item.price)}</span>
           </div>
-
-          <div class="mt-4 grid grid-cols-3 gap-2 text-sm">
-            <div class="bg-slate-100 rounded-2xl p-3">
-              <p class="text-xs text-slate-500">Μπαταρία</p>
-              <p class="font-black">${item.battery || "-"}%</p>
-            </div>
-            <div class="bg-slate-100 rounded-2xl p-3">
-              <p class="text-xs text-slate-500">Ρίσκο</p>
-              <p class="font-black">${riskLabel(item.risk)}</p>
-            </div>
-            <div class="bg-slate-100 rounded-2xl p-3">
-              <p class="text-xs text-slate-500">Περιοχή</p>
-              <p class="font-black truncate">${escapeHtml(item.location)}</p>
-            </div>
-          </div>
-
-          <button data-id="${item.id}" class="detailsBtn mt-5 w-full bg-slate-950 text-white rounded-2xl px-5 py-3 font-black">
-            Λεπτομέρειες
-          </button>
+          <p class="text-slate-600 mt-4 text-sm">${escapeHtml(item.description || "Χωρίς περιγραφή.")}</p>
+          <a class="mt-5 block w-full bg-slate-950 text-white rounded-2xl px-5 py-3 font-black text-center" href="mailto:${ADMIN_EMAIL}?subject=Ενδιαφέρον για ${encodeURIComponent(item.title)}">
+            Επικοινωνία
+          </a>
         `;
-
         grid.appendChild(card);
       });
-
-      document.querySelectorAll(".detailsBtn").forEach(function(button) {
-        button.addEventListener("click", function() {
-          showDetails(button.dataset.id);
-        });
-      });
     }
 
-    function showDetails(id) {
-      const item = listings.find(function(entry) {
-        return String(entry.id) === String(id);
-      });
-
-      if (!item) return;
-
-      const subject = encodeURIComponent("Ενδιαφέρον για " + item.title + " στο ReGadget Market");
-      const body = encodeURIComponent(
-        "Γεια σας,\n\nΕνδιαφέρομαι για την αγγελία:\n" +
-        item.title +
-        "\nΤιμή: " +
-        item.price +
-        "€\nΠεριοχή: " +
-        item.location +
-        "\n\nΠαρακαλώ επικοινωνήστε μαζί μου."
-      );
-
-      modalContent.innerHTML = `
-        <p class="text-blue-600 font-black uppercase tracking-widest text-sm">${escapeHtml(item.category)}</p>
-        <h3 class="text-3xl font-black mt-2">${escapeHtml(item.title)}</h3>
-        <p class="text-slate-500 mt-2">${escapeHtml(item.condition)} • ${escapeHtml(item.location)} • Μπαταρία ${item.battery || "-"}%</p>
-
-        <div class="my-6 rounded-3xl bg-slate-100 p-5">
-          <p class="text-sm text-slate-500">Περιγραφή</p>
-          <p class="mt-2 text-slate-800">${escapeHtml(item.description)}</p>
-        </div>
-
-        <div class="grid sm:grid-cols-3 gap-3 mb-6">
-          <div class="bg-blue-50 rounded-2xl p-4">
-            <p class="text-xs text-blue-700">Τιμή</p>
-            <p class="font-black text-xl">${euro(item.price)}</p>
-          </div>
-          <div class="bg-slate-100 rounded-2xl p-4">
-            <p class="text-xs text-slate-500">Ρίσκο</p>
-            <p class="font-black text-xl">${riskLabel(item.risk)}</p>
-          </div>
-          <div class="bg-slate-100 rounded-2xl p-4">
-            <p class="text-xs text-slate-500">Πωλητής</p>
-            <p class="font-black text-xl">${escapeHtml(item.seller || "Ιδιώτης")}</p>
-          </div>
-        </div>
-
-        <a class="block text-center bg-blue-600 hover:bg-blue-500 text-white rounded-2xl px-6 py-4 font-black" href="mailto:${ADMIN_EMAIL}?subject=${subject}&body=${body}">
-          Στείλε email ενδιαφέροντος
-        </a>
-      `;
-
-      modal.classList.remove("hidden");
-      modal.classList.add("flex");
-    }
-
-    document.getElementById("closeModal").addEventListener("click", function() {
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-    });
-
-    modal.addEventListener("click", function(event) {
-      if (event.target === modal) {
-        modal.classList.add("hidden");
-        modal.classList.remove("flex");
-      }
-    });
-
-    [searchInput, categoryFilter, conditionFilter, sortSelect].forEach(function(element) {
-      element.addEventListener("input", renderListings);
+    [searchInput, categoryFilter, conditionFilter, sortSelect].forEach(function(el) {
+      el.addEventListener("input", renderListings);
+      el.addEventListener("change", renderListings);
     });
 
     document.getElementById("sellForm").addEventListener("submit", function(event) {
       event.preventDefault();
 
-      const batteryValue = Number(document.getElementById("battery").value || 0);
-
-      const item = {
-        id: Date.now(),
-        title: document.getElementById("model").value.trim(),
+      const data = {
+        model: document.getElementById("model").value.trim(),
         category: document.getElementById("category").value,
-        price: Number(document.getElementById("price").value),
-        battery: batteryValue,
+        price: document.getElementById("price").value,
+        battery: document.getElementById("battery").value,
         condition: document.getElementById("condition").value,
         location: document.getElementById("location").value.trim(),
-        seller: document.getElementById("seller").value.trim() || "Ιδιώτης",
+        seller: document.getElementById("seller").value.trim(),
         contact: document.getElementById("contactInfo").value.trim(),
-        description: document.getElementById("description").value.trim() || "Δεν δόθηκε περιγραφή.",
-        createdAt: new Date().toISOString(),
-        risk: Math.max(8, Math.min(45, Math.round(40 - batteryValue / 4 + Math.random() * 10)))
+        description: document.getElementById("description").value.trim()
       };
 
-      const localListings = JSON.parse(localStorage.getItem("regadget_listings") || "[]");
-      localListings.unshift(item);
-      localStorage.setItem("regadget_listings", JSON.stringify(localListings));
-
-      listings = [item, ...listings];
-      renderListings();
-
-      document.getElementById("formMessage").textContent = "Η αγγελία εμφανίστηκε στη σελίδα σου και άνοιξε email για αποστολή.";
-
-      const subject = encodeURIComponent("Νέα αγγελία: " + item.title);
+      const subject = encodeURIComponent("Νέα αγγελία Gadgetora - " + data.model);
       const body = encodeURIComponent(
-        "Νέα αγγελία\n\n" +
-        "Μοντέλο: " + item.title + "\n" +
-        "Κατηγορία: " + item.category + "\n" +
-        "Τιμή: " + item.price + "€\n" +
-        "Μπαταρία: " + item.battery + "%\n" +
-        "Κατάσταση: " + item.condition + "\n" +
-        "Περιοχή: " + item.location + "\n" +
-        "Πωλητής: " + item.seller + "\n" +
-        "Επικοινωνία: " + item.contact + "\n" +
-        "Περιγραφή: " + item.description
+        "Νέα αγγελία Gadgetora\n\n" +
+        "Μοντέλο: " + data.model + "\n" +
+        "Κατηγορία: " + data.category + "\n" +
+        "Τιμή: " + data.price + "€\n" +
+        "Μπαταρία: " + (data.battery || "-") + "%\n" +
+        "Κατάσταση: " + data.condition + "\n" +
+        "Περιοχή: " + data.location + "\n" +
+        "Πωλητής: " + data.seller + "\n" +
+        "Επικοινωνία: " + data.contact + "\n\n" +
+        "Περιγραφή:\n" + (data.description || "-")
       );
 
       window.location.href = "mailto:" + ADMIN_EMAIL + "?subject=" + subject + "&body=" + body;
-
-      event.target.reset();
-      location.hash = "#market";
+      document.getElementById("formMessage").textContent = "Άνοιξε το email για να σταλεί η αγγελία για έλεγχο.";
     });
 
     renderListings();
   </script>
 </body>
-  </html>
+</html>
