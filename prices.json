@@ -1,35 +1,35 @@
 {
-  "updated_at": "Δεν έχει γίνει ακόμα αυτόματη ενημέρωση",
+  "updated_at": "Σύνδεσμοι προς σημερινές τιμές",
   "prices": {
     "phones_general": {
-      "price": "Δες διαθέσιμες τιμές",
+      "price": "Δες σημερινές τιμές στο Skroutz",
       "store": "Skroutz",
-      "status": "manual_link"
+      "status": "live_link"
     },
     "phones_bestprice": {
-      "price": "Δες διαθέσιμες τιμές",
+      "price": "Δες σημερινές τιμές στο BestPrice",
       "store": "BestPrice",
-      "status": "manual_link"
+      "status": "live_link"
     },
     "laptop_general": {
-      "price": "Δες διαθέσιμες τιμές",
+      "price": "Δες σημερινές τιμές στο Skroutz",
       "store": "Skroutz",
-      "status": "manual_link"
+      "status": "live_link"
     },
     "laptop_bestprice": {
-      "price": "Δες διαθέσιμες τιμές",
+      "price": "Δες σημερινές τιμές στο BestPrice",
       "store": "BestPrice",
-      "status": "manual_link"
+      "status": "live_link"
     },
     "refurbished_general": {
-      "price": "Δες διαθέσιμες τιμές",
+      "price": "Δες refurbished τιμές στο Skroutz",
       "store": "Skroutz",
-      "status": "manual_link"
+      "status": "live_link"
     },
     "refurbished_amazon": {
-      "price": "Δες διαθέσιμες τιμές",
+      "price": "Δες refurbished τιμές στο Amazon",
       "store": "Amazon",
-      "status": "manual_link"
+      "status": "live_link"
     }
   }
 }
