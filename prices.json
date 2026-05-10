@@ -1,0 +1,35 @@
+{
+  "updated_at": "Δεν έχει γίνει ακόμα αυτόματη ενημέρωση",
+  "prices": {
+    "phones_general": {
+      "price": "Δες διαθέσιμες τιμές",
+      "store": "Skroutz",
+      "status": "manual_link"
+    },
+    "phones_bestprice": {
+      "price": "Δες διαθέσιμες τιμές",
+      "store": "BestPrice",
+      "status": "manual_link"
+    },
+    "laptop_general": {
+      "price": "Δες διαθέσιμες τιμές",
+      "store": "Skroutz",
+      "status": "manual_link"
+    },
+    "laptop_bestprice": {
+      "price": "Δες διαθέσιμες τιμές",
+      "store": "BestPrice",
+      "status": "manual_link"
+    },
+    "refurbished_general": {
+      "price": "Δες διαθέσιμες τιμές",
+      "store": "Skroutz",
+      "status": "manual_link"
+    },
+    "refurbished_amazon": {
+      "price": "Δες διαθέσιμες τιμές",
+      "store": "Amazon",
+      "status": "manual_link"
+    }
+  }
+}
