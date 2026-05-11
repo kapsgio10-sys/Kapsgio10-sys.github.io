@@ -1,0 +1,34 @@
+name: Αυτόματη Ενημέρωση Τιμών (Cron Job)
+
+on:
+  schedule:
+    # Τρέχει κάθε μέρα στις 04:00 τα ξημερώματα UTC (06:00/07:00 ώρα Ελλάδος)
+    - cron: '0 4 * * *'
+  workflow_dispatch: # Σου επιτρέπει να το τρέχεις χειροκίνητα με ένα κλικ από το GitHub
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Λήψη κώδικα (Checkout)
+        uses: actions/checkout@v3
+
+      - name: Εγκατάσταση Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Εγκατάσταση Βιβλιοθηκών
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Εκτέλεση Web Scraper
+        run: python scripts/scraper.py
+
+      - name: Αποθήκευση αλλαγών (Commit & Push)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          # Το exit 0 διασφαλίζει ότι το action δεν χτυπάει error αν οι τιμές δεν έχουν αλλάξει
+          git commit -am "Αυτόματη ενημέρωση τιμών μέσω αναζήτησης" || exit 0
+          git push
