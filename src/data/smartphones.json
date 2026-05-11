@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iphone-13-pro-refurbished",
+    "name": "Apple iPhone 13 Pro (Refurbished)",
+    "price": "580.00",
+    "source_url": "https://paradeigma-katastimatos.gr/iphone-13-pro",
+    "affiliate_link": "https://affiliate-link.com/track?id=123",
+    "status": "Διαθέσιμο"
+  },
+  {
+    "id": "samsung-s23-ultra",
+    "name": "Samsung Galaxy S23 Ultra",
+    "price": "890.00",
+    "source_url": "https://paradeigma-katastimatos.gr/s23-ultra",
+    "affiliate_link": "https://affiliate-link.com/track?id=456",
+    "status": "Διαθέσιμο"
+  }
+]
