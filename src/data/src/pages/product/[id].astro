@@ -1,0 +1,30 @@
+---
+import smartphones from '../../data/smartphones.json';
+
+// Αυτή η συνάρτηση λέει στο Astro ποιες σελίδες να δημιουργήσει στο Build Time
+export function getStaticPaths() {
+  return smartphones.map((phone) => ({
+    params: { id: phone.id },
+    props: { phone },
+  }));
+}
+
+const { phone } = Astro.props;
+---
+<html lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <title>{phone.name} - Τιμή & Χαρακτηριστικά</title>
+  </head>
+  <body>
+    <article>
+      <h1>{phone.name}</h1>
+      <p>Τρέχουσα Τιμή: <strong>{phone.price}€</strong></p>
+      <p>Κατάσταση: {phone.status}</p>
+      
+      <a href={phone.affiliate_link} target="_blank" rel="nofollow noopener">
+        <button>Δες την Προσφορά</button>
+      </a>
+    </article>
+  </body>
+</html>
