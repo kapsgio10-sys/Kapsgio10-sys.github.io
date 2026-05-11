@@ -1,12 +1,21 @@
 ---
+import smartphones from '../data/smartphones.json';
 ---
 <html lang="el">
   <head>
     <meta charset="utf-8" />
-    <title>Η Σελίδα μου</title>
+    <title>Το Κατάστημά Μου</title>
   </head>
   <body>
-    <h1>Καλώς ήρθατε!</h1>
-    <p>Η νέα μου ιστοσελίδα ετοιμάζεται. Μείνετε συντονισμένοι.</p>
+    <h1>Διαθέσιμα Προϊόντα</h1>
+    <p>Επιλέξτε ένα προϊόν για να δείτε τιμή και λεπτομέρειες:</p>
+    
+    <ul>
+      {smartphones.map((phone) => (
+        <li>
+          <a href={`/product/${phone.id}`}>{phone.name}</a> - <strong>{phone.price}€</strong>
+        </li>
+      ))}
+    </ul>
   </body>
 </html>
