@@ -7,9 +7,15 @@
   <meta name="google-site-verification" content="WrE052B6h1wSasuTdaF3emFy8EsunrBpYzzl0sj1p_w" />
 
   <title>Gadgetora | Οδηγοί αγοράς & σύγκριση τιμών για tech</title>
-  <meta name="description" content="Gadgetora - Οδηγοί αγοράς για κινητά, laptop, tablets και refurbished tech. Σύγκρινε επιλογές και δες πραγματικές τιμές." />
-  <meta name="keywords" content="μεταχειρισμένα κινητά, refurbished κινητά, laptop, σύγκριση τιμών, οδηγοί αγοράς" />
+  <meta name="description" content="Gadgetora - Οδηγοί αγοράς για κινητά, laptop, tablets, audio και refurbished tech. Δες προτάσεις, έλεγξε τιμές και βρες τι αξίζει πραγματικά." />
+  <meta name="keywords" content="κινητά, laptop, refurbished, tablets, ακουστικά, σύγκριση τιμών, οδηγοί αγοράς, Skroutz, BestPrice, Amazon" />
   <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Gadgetora | Οδηγοί αγοράς & σύγκριση τιμών" />
+  <meta property="og:description" content="Δες οδηγούς αγοράς και επιλογές για κινητά, laptop, tablets, audio και refurbished tech." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="el_GR" />
+  <meta property="og:url" content="https://kapsgio10-sys.github.io/" />
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -17,245 +23,630 @@
     html { scroll-behavior: smooth; }
     body { -webkit-font-smoothing: antialiased; }
     .glass {
-      background: rgba(15, 23, 42, 0.86);
+      background: rgba(15, 23, 42, 0.88);
       backdrop-filter: blur(18px);
     }
     .soft-shadow {
       box-shadow: 0 24px 80px rgba(15, 23, 42, 0.14);
     }
     .card-hover {
-      transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
     }
     .card-hover:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 30px 60px rgba(15, 23, 42, 0.2);
+      transform: translateY(-5px);
+      box-shadow: 0 28px 70px rgba(15, 23, 42, 0.18);
+      border-color: rgba(37, 99, 235, 0.35);
     }
     .scrollbar-hide::-webkit-scrollbar { display: none; }
     .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Gadgetora",
+    "url": "https://kapsgio10-sys.github.io/",
+    "description": "Οδηγοί αγοράς και σύγκριση τιμών για tech προϊόντα.",
+    "inLanguage": "el-GR"
+  }
+  </script>
 </head>
 
 <body class="bg-slate-950 text-white font-sans">
 
   <header class="sticky top-0 z-50 glass border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
-      <a href="#top" class="flex items-center gap-3 shrink-0 group">
-        <div class="w-11 h-11 rounded-2xl bg-blue-600 grid place-items-center font-black text-xl group-hover:scale-105 transition-transform">G</div>
+      <a href="#top" class="flex items-center gap-3 shrink-0">
+        <div class="w-11 h-11 rounded-2xl bg-blue-600 grid place-items-center font-black text-xl shadow-lg shadow-blue-600/25">G</div>
         <div>
           <h1 class="font-black text-xl leading-none">Gadgetora</h1>
           <p class="text-xs text-slate-400">Tech Buying Guides</p>
         </div>
       </a>
 
-      <nav class="flex overflow-x-auto items-center gap-4 md:gap-8 text-sm font-medium text-slate-400 pb-1 md:pb-0 scrollbar-hide w-full md:w-auto">
-        <a href="#products" class="hover:text-white transition-colors whitespace-nowrap">Προϊόντα</a>
-        <a href="#guides" class="hover:text-white transition-colors whitespace-nowrap">Οδηγοί</a>
-        <a href="#checks" class="hover:text-white transition-colors whitespace-nowrap">Έλεγχοι</a>
-        <a href="#ask" class="hover:text-white transition-colors whitespace-nowrap">Ρώτα μας</a>
+      <nav class="flex overflow-x-auto items-center gap-4 md:gap-7 text-sm text-slate-300 pb-1 md:pb-0 scrollbar-hide w-full md:w-auto">
+        <a href="#products" class="hover:text-white whitespace-nowrap">Προϊόντα</a>
+        <a href="#guides" class="hover:text-white whitespace-nowrap">Οδηγοί</a>
+        <a href="#checks" class="hover:text-white whitespace-nowrap">Έλεγχοι</a>
+        <a href="#ask" class="hover:text-white whitespace-nowrap">Ρώτα μας</a>
       </nav>
 
-      <a href="#products" class="hidden md:block bg-white text-slate-950 px-5 py-2.5 rounded-xl font-bold text-sm shrink-0 hover:bg-blue-50 transition-colors">
+      <a href="#products" class="hidden md:block bg-white text-slate-950 px-4 py-3 rounded-2xl font-black text-sm shrink-0 hover:bg-blue-50">
         Δες επιλογές
       </a>
     </div>
   </header>
 
   <section id="top" class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,.25),_transparent_40%),radial-gradient(circle_at_bottom_right,_rgba(16,185,129,.15),_transparent_40%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,.35),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(16,185,129,.20),_transparent_35%)]"></div>
 
-    <div class="relative max-w-7xl mx-auto px-4 py-16 md:py-28 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="text-center lg:text-left">
-        <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-blue-300 mb-8">
+    <div class="relative max-w-7xl mx-auto px-4 py-16 md:py-24 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm text-slate-300 mb-6">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
           </span>
-          Αξιόπιστες προτάσεις & έλεγχος τιμών
+          Αξιόπιστες προτάσεις αγοράς & έλεγχος τιμών
         </div>
 
-        <h2 class="text-5xl md:text-7xl font-black leading-tight tracking-tight">
-          Βρες τι αξίζει να <span class="text-blue-500">αγοράσεις.</span>
+        <h2 class="text-4xl md:text-6xl font-black leading-tight tracking-tight">
+          Βρες τι αξίζει πραγματικά να αγοράσεις.
         </h2>
 
-        <p class="mt-8 text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-          Αναλύουμε την αγορά για να μη χρειάζεται να το κάνεις εσύ. Βρες πραγματικές τιμές και έξυπνες επιλογές για την επόμενη tech αγορά σου.
+        <p class="mt-6 text-lg text-slate-300 max-w-2xl leading-relaxed">
+          Το Gadgetora συγκρίνει επιλογές για κινητά, laptop, refurbished συσκευές, tablets και audio.
+          Στόχος είναι να μη χαλάς χρόνο σε άπειρες καρτέλες, ψεύτικες προσφορές και κριτικές που μυρίζουν διαφήμιση από χιλιόμετρο.
         </p>
 
-        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <a href="#products" class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-black text-lg transition-all shadow-lg shadow-blue-600/20">
-            Δες προϊόντα
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="#products" class="bg-blue-600 hover:bg-blue-500 px-7 py-4 rounded-2xl font-black text-center shadow-lg shadow-blue-600/20">
+            Δες επιλογές αγοράς
           </a>
-          <a href="#guides" class="bg-white/10 hover:bg-white/20 border border-white/10 px-8 py-4 rounded-2xl font-black text-lg transition-all">
-            Οδηγοί αγοράς
+          <a href="#guides" class="bg-white/10 hover:bg-white/15 border border-white/10 px-7 py-4 rounded-2xl font-black text-center">
+            Δες οδηγούς
           </a>
         </div>
+
+        <p id="lastUpdated" class="mt-6 text-sm text-slate-400">
+          Φόρτωση ενημέρωσης τιμών...
+        </p>
       </div>
 
-      <div class="bg-white text-slate-950 rounded-[2.5rem] p-4 soft-shadow">
-        <!-- Optimized Hero Image -->
+      <div class="bg-white text-slate-950 rounded-[2rem] p-6 soft-shadow">
         <img
-          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=75"
-          alt="Tech setup"
-          class="w-full h-80 object-cover rounded-[2rem] mb-8"
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80"
+          alt="Laptop και κινητό"
+          class="w-full h-72 object-cover rounded-3xl mb-6"
         />
-        <div class="px-4 pb-6">
-          <p class="text-sm text-blue-600 font-black uppercase tracking-widest mb-2">Η Φιλοσοφία μας</p>
-          <h3 class="text-3xl font-black">Διαφάνεια πάνω από όλα.</h3>
-          <p class="text-slate-600 mt-4 leading-relaxed text-lg">
-            Δεν προτείνουμε απλώς προϊόντα. Ελέγχουμε την αξιοπιστία των πωλητών σε Skroutz, BestPrice και Amazon για να είσαι σίγουρος.
-          </p>
+
+        <p class="text-sm text-blue-600 font-black uppercase tracking-widest">Gadgetora</p>
+        <h3 class="text-3xl font-black mt-1">Καθαρή επιλογή, λιγότερο μπέρδεμα.</h3>
+        <p class="text-slate-600 mt-4 leading-relaxed">
+          Δεν προτείνουμε απλώς ό,τι φαίνεται δημοφιλές. Κοιτάμε χρήση, τιμή, αξιοπιστία καταστήματος και πραγματική αξία αγοράς.
+        </p>
+
+        <div class="mt-6 grid grid-cols-3 gap-3 text-center">
+          <div class="rounded-2xl bg-slate-100 p-3">
+            <p class="text-xl font-black">5+</p>
+            <p class="text-xs text-slate-500">Κατηγορίες</p>
+          </div>
+          <div class="rounded-2xl bg-slate-100 p-3">
+            <p class="text-xl font-black">3</p>
+            <p class="text-xs text-slate-500">Οδηγοί</p>
+          </div>
+          <div class="rounded-2xl bg-slate-100 p-3">
+            <p class="text-xl font-black">24/7</p>
+            <p class="text-xs text-slate-500">Online</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <main class="bg-slate-50 text-slate-950">
-    <section id="products" class="max-w-7xl mx-auto px-4 py-20">
-      <div class="mb-12">
-        <p class="text-blue-600 font-black uppercase tracking-widest text-sm">Real-time Data</p>
-        <h2 class="text-4xl md:text-5xl font-black mt-2">Επιλογές & Τιμές</h2>
+
+    <section id="products" class="max-w-7xl mx-auto px-4 py-16 md:py-20">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-8">
+        <div>
+          <p class="text-blue-600 font-black uppercase tracking-widest text-sm">Σύγκριση επιλογών</p>
+          <h2 class="text-4xl md:text-5xl font-black mt-2">Προϊόντα & τιμές</h2>
+          <p class="text-slate-600 mt-4 max-w-2xl">
+            Δες επιλογές ανά κατηγορία και κατάστημα. Αν οι τιμές αλλάζουν, σε στέλνουμε κατευθείαν στην πηγή για σημερινό έλεγχο.
+          </p>
+        </div>
       </div>
 
-      <div class="bg-white border border-slate-200 rounded-3xl p-4 mb-12 grid md:grid-cols-3 gap-4 shadow-sm">
-        <input id="searchInput" class="rounded-xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all bg-slate-50" placeholder="Αναζήτηση..." />
-        <select id="categoryFilter" class="rounded-xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all bg-slate-50 cursor-pointer">
+      <div class="bg-white border border-slate-200 rounded-[2rem] p-4 md:p-5 mb-8 grid md:grid-cols-3 gap-3 soft-shadow">
+        <input id="searchInput" class="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50" placeholder="Αναζήτηση π.χ. iPhone, laptop, refurbished" />
+
+        <select id="categoryFilter" class="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50">
           <option value="all">Όλες οι κατηγορίες</option>
           <option value="Κινητά">Κινητά</option>
           <option value="Laptop">Laptop</option>
           <option value="Refurbished">Refurbished</option>
+          <option value="Audio">Audio</option>
+          <option value="Tablet">Tablet</option>
         </select>
-        <select id="storeFilter" class="rounded-xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition-all bg-slate-50 cursor-pointer">
+
+        <select id="storeFilter" class="rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50">
           <option value="all">Όλα τα καταστήματα</option>
           <option value="Skroutz">Skroutz</option>
           <option value="BestPrice">BestPrice</option>
+          <option value="Public">Public</option>
           <option value="Amazon">Amazon</option>
         </select>
       </div>
 
-      <div id="productGrid" class="grid md:grid-cols-3 gap-8 items-stretch"></div>
+      <div id="productGrid" class="grid md:grid-cols-3 gap-6"></div>
 
-      <div id="noProducts" class="hidden bg-white border border-slate-200 rounded-[2rem] p-12 text-center soft-shadow">
+      <div id="noProducts" class="hidden bg-white border border-slate-200 rounded-[2rem] p-8 text-center soft-shadow">
         <div class="text-5xl mb-4">🔍</div>
-        <h3 class="text-2xl font-black">Δεν βρήκαμε αυτό που ψάχνεις</h3>
-        <p class="text-slate-500 mt-2">Δοκίμασε διαφορετικά φίλτρα ή λέξεις-κλειδιά.</p>
+        <h3 class="text-2xl font-black">Δεν βρέθηκαν αποτελέσματα</h3>
+        <p class="text-slate-600 mt-2">Άλλαξε φίλτρα ή αναζήτηση.</p>
       </div>
     </section>
 
-    <!-- Optimized Guide Images -->
-    <section id="guides" class="max-w-7xl mx-auto px-4 py-20 border-t border-slate-200">
-      <h2 class="text-4xl font-black mb-10">Οδηγοί Αγοράς</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 card-hover flex flex-col">
-          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=70" class="h-48 w-full object-cover" alt="Phone guide">
-          <div class="p-6 flex flex-col flex-grow">
-            <h3 class="text-2xl font-black">Οδηγός Κινητού</h3>
-            <p class="text-slate-600 mt-3 flex-grow text-sm">Μπαταρία, οθόνη και έλεγχος κλειδώματος iCloud/Google.</p>
-            <button onclick="openGuide('phone')" class="mt-6 w-full bg-slate-900 text-white rounded-xl py-3 font-bold hover:bg-blue-600 transition-colors">Άνοιγμα</button>
+    <section id="guides" class="max-w-7xl mx-auto px-4 py-16 border-t border-slate-200">
+      <p class="text-blue-600 font-black uppercase tracking-widest text-sm">Οδηγοί αγοράς</p>
+      <h2 class="text-4xl md:text-5xl font-black mt-2">Διάβασε πριν πληρώσεις</h2>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <article class="bg-white rounded-[2rem] overflow-hidden border border-slate-200 soft-shadow card-hover flex flex-col">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80" alt="Κινητό" class="h-52 w-full object-cover">
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="text-2xl font-black">Τι να προσέξεις πριν αγοράσεις κινητό</h3>
+            <p class="text-slate-600 mt-3 flex-1">Μπαταρία, οθόνη, κλείδωμα λογαριασμού, εγγύηση και τελική τιμή.</p>
+            <button type="button" onclick="openGuide('phone')" class="mt-5 w-full bg-slate-950 text-white rounded-2xl px-5 py-3 font-black hover:bg-blue-600">
+              Άνοιγμα οδηγού
+            </button>
           </div>
         </article>
 
-        <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 card-hover flex flex-col">
-          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=70" class="h-48 w-full object-cover" alt="Laptop guide">
-          <div class="p-6 flex flex-col flex-grow">
-            <h3 class="text-2xl font-black">Laptop έως 400€</h3>
-            <p class="text-slate-600 mt-3 flex-grow text-sm">SSD και RAM: Τα δύο πράγματα που θα κάνουν τη διαφορά.</p>
-            <button onclick="openGuide('laptop')" class="mt-6 w-full bg-slate-900 text-white rounded-xl py-3 font-bold hover:bg-blue-600 transition-colors">Άνοιγμα</button>
+        <article class="bg-white rounded-[2rem] overflow-hidden border border-slate-200 soft-shadow card-hover flex flex-col">
+          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80" alt="Laptop" class="h-52 w-full object-cover">
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="text-2xl font-black">Laptop για δουλειά μέχρι 400€</h3>
+            <p class="text-slate-600 mt-3 flex-1">SSD, RAM, μπαταρία, φορτιστής και οθόνη. Τα βαρετά που σώζουν λεφτά.</p>
+            <button type="button" onclick="openGuide('laptop')" class="mt-5 w-full bg-slate-950 text-white rounded-2xl px-5 py-3 font-black hover:bg-blue-600">
+              Άνοιγμα οδηγού
+            </button>
           </div>
         </article>
 
-        <article class="bg-white rounded-3xl overflow-hidden border border-slate-200 card-hover flex flex-col">
-          <img src="https://images.unsplash.com/photo-1642132652860-471b4228023e?auto=format&fit=crop&w=600&q=70" class="h-48 w-full object-cover" alt="Refurbished guide">
-          <div class="p-6 flex flex-col flex-grow">
-            <h3 class="text-2xl font-black">Refurbished</h3>
-            <p class="text-slate-600 mt-3 flex-grow text-sm">Πότε η εγγύηση αξίζει τα παραπάνω χρήματα.</p>
-            <button onclick="openGuide('refurbished')" class="mt-6 w-full bg-slate-900 text-white rounded-xl py-3 font-bold hover:bg-blue-600 transition-colors">Άνοιγμα</button>
+        <article class="bg-white rounded-[2rem] overflow-hidden border border-slate-200 soft-shadow card-hover flex flex-col">
+          <img src="https://images.unsplash.com/photo-1642132652860-471b4228023e?auto=format&fit=crop&w=900&q=80" alt="Refurbished" class="h-52 w-full object-cover">
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="text-2xl font-black">Refurbished ή μεταχειρισμένο;</h3>
+            <p class="text-slate-600 mt-3 flex-1">Πότε αξίζει να πληρώσεις παραπάνω για εγγύηση και έλεγχο.</p>
+            <button type="button" onclick="openGuide('refurbished')" class="mt-5 w-full bg-slate-950 text-white rounded-2xl px-5 py-3 font-black hover:bg-blue-600">
+              Άνοιγμα οδηγού
+            </button>
           </div>
         </article>
       </div>
     </section>
+
+    <section id="checks" class="bg-slate-950 text-white py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <p class="text-emerald-300 font-black uppercase tracking-widest text-sm">Checklist</p>
+        <h2 class="text-4xl md:text-5xl font-black mt-2">Έλεγχος πριν αγοράσεις</h2>
+
+        <div class="mt-8 grid md:grid-cols-4 gap-5">
+          <div class="bg-white/10 border border-white/10 rounded-3xl p-5">
+            <h3 class="font-black text-xl">Μπαταρία</h3>
+            <p class="text-slate-300 mt-2 text-sm">Έλεγξε battery health, κύκλους φόρτισης ή πραγματική διάρκεια χρήσης.</p>
+          </div>
+
+          <div class="bg-white/10 border border-white/10 rounded-3xl p-5">
+            <h3 class="font-black text-xl">Οθόνη</h3>
+            <p class="text-slate-300 mt-2 text-sm">Κοίτα για σπασίματα, καμένα pixels, φωτεινότητα και αλλαγμένη οθόνη.</p>
+          </div>
+
+          <div class="bg-white/10 border border-white/10 rounded-3xl p-5">
+            <h3 class="font-black text-xl">Εγγύηση</h3>
+            <p class="text-slate-300 mt-2 text-sm">Προτίμησε προϊόν με εγγύηση, ειδικά σε refurbished ή ακριβές συσκευές.</p>
+          </div>
+
+          <div class="bg-white/10 border border-white/10 rounded-3xl p-5">
+            <h3 class="font-black text-xl">Τελική τιμή</h3>
+            <p class="text-slate-300 mt-2 text-sm">Υπολόγισε μεταφορικά, αντικαταβολή, επιστροφές και αξιοπιστία καταστήματος.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ask" class="max-w-7xl mx-auto px-4 py-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <p class="text-blue-600 font-black uppercase tracking-widest text-sm">Ρώτα το Gadgetora</p>
+          <h2 class="text-4xl md:text-5xl font-black mt-2">Θες πρόταση αγοράς;</h2>
+          <p class="text-slate-600 mt-5 leading-relaxed">
+            Γράψε budget, χρήση και τι ψάχνεις. Το email ανοίγει έτοιμο για αποστολή, επειδή προφανώς ακόμα και μια φόρμα πρέπει να έχει τελετουργικό.
+          </p>
+
+          <div class="mt-8 bg-white border border-slate-200 rounded-[2rem] p-6 soft-shadow">
+            <h3 class="text-xl font-black">Τι να γράψεις</h3>
+            <ul class="mt-4 space-y-3 text-slate-600">
+              <li>• Budget, π.χ. 250€</li>
+              <li>• Χρήση, π.χ. social, φωτογραφίες, δουλειά</li>
+              <li>• Προτίμηση, π.χ. Android, iPhone, laptop, tablet</li>
+              <li>• Αν θες καινούργιο ή refurbished</li>
+            </ul>
+          </div>
+        </div>
+
+        <form id="askForm" class="bg-white rounded-[2rem] p-6 md:p-8 border border-slate-200 soft-shadow">
+          <div class="grid gap-4">
+            <label>
+              <span class="text-sm font-bold text-slate-700">Budget</span>
+              <input id="budget" required class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50" placeholder="π.χ. 250€">
+            </label>
+
+            <label>
+              <span class="text-sm font-bold text-slate-700">Τι ψάχνεις;</span>
+              <select id="deviceType" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50">
+                <option>Κινητό</option>
+                <option>Laptop</option>
+                <option>Tablet</option>
+                <option>Audio</option>
+                <option>Refurbished</option>
+                <option>Δεν ξέρω ακόμα</option>
+              </select>
+            </label>
+
+            <label>
+              <span class="text-sm font-bold text-slate-700">Χρήση</span>
+              <textarea id="usage" required rows="5" class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50" placeholder="π.χ. φωτογραφίες, social, δουλειά, σχολή..."></textarea>
+            </label>
+          </div>
+
+          <button type="submit" class="mt-5 w-full bg-blue-600 hover:bg-blue-500 text-white rounded-2xl px-6 py-4 font-black">
+            Στείλε αίτημα πρότασης
+          </button>
+
+          <p id="askMessage" class="mt-4 text-sm text-slate-500"></p>
+        </form>
+      </div>
+    </section>
+
   </main>
 
-  <!-- Modal Code (id=guideModal) and Scripts remain same structure but with minor UX cleanups -->
-  <!-- ... (id="checks", id="ask" etc) ... -->
-
-  <div id="guideModal" class="fixed inset-0 bg-slate-900/90 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm">
-    <div class="bg-white text-slate-950 rounded-3xl max-w-2xl w-full max-h-[80vh] overflow-y-auto p-8 relative shadow-2xl">
-      <button onclick="closeGuide()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-slate-100 font-black hover:bg-slate-200 transition-colors">×</button>
+  <div id="guideModal" class="fixed inset-0 bg-black/75 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm">
+    <div class="bg-white text-slate-950 rounded-[2rem] max-w-3xl w-full max-h-[85vh] overflow-y-auto p-6 md:p-8 relative soft-shadow">
+      <button type="button" onclick="closeGuide()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-slate-100 font-black hover:bg-slate-200">×</button>
       <div id="guideContent"></div>
     </div>
   </div>
 
+  <footer class="bg-slate-950 text-slate-400 px-4 py-10">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-blue-600 grid place-items-center font-black text-white">G</div>
+          <div>
+            <p class="text-white font-black text-lg">Gadgetora</p>
+            <p class="text-xs">Tech Buying Guides</p>
+          </div>
+        </div>
+        <p class="mt-4">Οδηγοί αγοράς, επιλογές προϊόντων και πρακτικοί έλεγχοι πριν πληρώσεις.</p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-black mb-3">Γρήγορα links</h3>
+        <div class="grid gap-2">
+          <a href="#products" class="hover:text-white">Προϊόντα</a>
+          <a href="#guides" class="hover:text-white">Οδηγοί</a>
+          <a href="#checks" class="hover:text-white">Έλεγχοι</a>
+          <a href="#ask" class="hover:text-white">Ρώτα μας</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-white font-black mb-3">Σημείωση</h3>
+        <p>Οι τιμές και τα links μπορεί να αλλάζουν. Πάντα έλεγξε την τελική τιμή στο κατάστημα πριν αγοράσεις.</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto mt-8 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between gap-3 text-xs">
+      <p>© 2026 Gadgetora</p>
+      <p>Οδηγοί αγοράς, Tech Reviews & Έξυπνες Αγορές.</p>
+    </div>
+  </footer>
+
   <script>
     const ADMIN_EMAIL = "kapsgio10@gmail.com";
+
+    const fallbackProducts = [
+      {
+        id: "phones_general",
+        title: "Κινητά & smartphones",
+        category: "Κινητά",
+        store: "Skroutz",
+        description: "Αναζήτηση για κινητά, iPhone, Samsung, Android και refurbished συσκευές.",
+        image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
+        affiliate_url: "https://www.skroutz.gr/search?keyphrase=%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CE%AC"
+      },
+      {
+        id: "phones_bestprice",
+        title: "Κινητά στο BestPrice",
+        category: "Κινητά",
+        store: "BestPrice",
+        description: "Σύγκριση τιμών για κινητά μέσω BestPrice.",
+        image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
+        affiliate_url: "https://www.bestprice.gr/search?q=%CE%BA%CE%B9%CE%BD%CE%B7%CF%84%CE%AC"
+      },
+      {
+        id: "laptop_general",
+        title: "Laptop για δουλειά",
+        category: "Laptop",
+        store: "Skroutz",
+        description: "Αναζήτηση laptop για δουλειά, σχολή, browser και καθημερινή χρήση.",
+        image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
+        affiliate_url: "https://www.skroutz.gr/search?keyphrase=laptop"
+      },
+      {
+        id: "laptop_bestprice",
+        title: "Laptop στο BestPrice",
+        category: "Laptop",
+        store: "BestPrice",
+        description: "Σύγκριση τιμών για laptop μέσω BestPrice.",
+        image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
+        affiliate_url: "https://www.bestprice.gr/search?q=laptop"
+      },
+      {
+        id: "refurbished_general",
+        title: "Refurbished συσκευές",
+        category: "Refurbished",
+        store: "Skroutz",
+        description: "Αναζήτηση refurbished κινητών, laptop και άλλων tech συσκευών.",
+        image: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=900&q=80",
+        affiliate_url: "https://www.skroutz.gr/search?keyphrase=refurbished"
+      },
+      {
+        id: "refurbished_amazon",
+        title: "Refurbished στο Amazon",
+        category: "Refurbished",
+        store: "Amazon",
+        description: "Αναζήτηση refurbished smartphones στο Amazon.",
+        image: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=900&q=80",
+        affiliate_url: "https://www.amazon.de/s?k=refurbished+smartphone"
+      }
+    ];
+
+    const fallbackPrices = {
+      phones_general: { price: "Δες σημερινές τιμές στο Skroutz", store: "Skroutz" },
+      phones_bestprice: { price: "Δες σημερινές τιμές στο BestPrice", store: "BestPrice" },
+      laptop_general: { price: "Δες σημερινές τιμές στο Skroutz", store: "Skroutz" },
+      laptop_bestprice: { price: "Δες σημερινές τιμές στο BestPrice", store: "BestPrice" },
+      refurbished_general: { price: "Δες refurbished τιμές στο Skroutz", store: "Skroutz" },
+      refurbished_amazon: { price: "Δες refurbished τιμές στο Amazon", store: "Amazon" }
+    };
+
     let products = [];
     let priceData = {};
 
-    // Load Data
+    function escapeHTML(value) {
+      return String(value || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    async function safeJsonFetch(path) {
+      const response = await fetch(path + "?ts=" + Date.now());
+      if (!response.ok) throw new Error("Fetch failed: " + path);
+      return response.json();
+    }
+
     async function loadData() {
       try {
-        const [pRes, prRes] = await Promise.all([
-          fetch("./products.json?ts=" + Date.now()),
-          fetch("./prices.json?ts=" + Date.now())
+        const [productsJson, pricesJson] = await Promise.all([
+          safeJsonFetch("./products.json"),
+          safeJsonFetch("./prices.json")
         ]);
-        const pJson = await pRes.json();
-        const prJson = await prRes.json();
-        products = pJson.products || [];
-        priceData = prJson.prices || {};
-        document.getElementById("lastUpdated").textContent = "Ενημέρωση: " + (prJson.updated_at || "Σήμερα");
-        renderProducts();
-      } catch (e) {
-        document.getElementById("productGrid").innerHTML = "<p class='col-span-full text-center py-10'>Πρόβλημα φόρτωσης. Δοκίμασε ξανά.</p>";
+
+        products = Array.isArray(productsJson.products) ? productsJson.products : fallbackProducts;
+        priceData = pricesJson.prices || fallbackPrices;
+
+        const updated = document.getElementById("lastUpdated");
+        if (updated) {
+          updated.textContent = "Τελευταία ενημέρωση τιμών: " + (pricesJson.updated_at || "Σήμερα");
+        }
+      } catch (error) {
+        products = fallbackProducts;
+        priceData = fallbackPrices;
+
+        const updated = document.getElementById("lastUpdated");
+        if (updated) {
+          updated.textContent = "Τελευταία ενημέρωση τιμών: βασικές προτάσεις Gadgetora";
+        }
       }
+
+      renderProducts();
+    }
+
+    function getPriceInfo(productId, fallbackStore) {
+      return priceData[productId] || {
+        price: "Δες σημερινή τιμή",
+        store: fallbackStore || "-"
+      };
     }
 
     function renderProducts() {
-      const q = document.getElementById("searchInput").value.toLowerCase();
-      const cat = document.getElementById("categoryFilter").value;
-      const stor = document.getElementById("storeFilter").value;
+      const query = document.getElementById("searchInput").value.toLowerCase().trim();
+      const category = document.getElementById("categoryFilter").value;
+      const store = document.getElementById("storeFilter").value;
 
-      const filtered = products.filter(p => {
-        const matchesSearch = p.title.toLowerCase().includes(q) || p.description.toLowerCase().includes(q);
-        const matchesCat = cat === "all" || p.category === cat;
-        const matchesStore = stor === "all" || p.store === stor;
-        return matchesSearch && matchesCat && matchesStore;
+      const filtered = products.filter(product => {
+        const text = [
+          product.title,
+          product.category,
+          product.description,
+          product.store
+        ].join(" ").toLowerCase();
+
+        const matchesSearch = !query || text.includes(query);
+        const matchesCategory = category === "all" || product.category === category;
+        const matchesStore = store === "all" || product.store === store;
+
+        return matchesSearch && matchesCategory && matchesStore;
       });
 
       const grid = document.getElementById("productGrid");
-      grid.innerHTML = "";
-      document.getElementById("noProducts").classList.toggle("hidden", filtered.length > 0);
+      const noProducts = document.getElementById("noProducts");
 
-      filtered.forEach(p => {
-        const info = priceData[p.id] || { price: "Δες στο site", store: p.store };
-        grid.innerHTML += `
-          <article class="bg-white rounded-3xl p-5 border border-slate-200 soft-shadow card-hover flex flex-col">
-            <img src="${p.image}?auto=format&fit=crop&w=500&q=70" class="h-44 w-full object-cover rounded-2xl mb-4" alt="${p.title}">
-            <div class="flex-grow">
-              <span class="text-blue-600 text-[10px] font-black uppercase tracking-widest">${p.category}</span>
-              <h3 class="text-xl font-black mt-1 leading-tight">${p.title}</h3>
-              <p class="text-slate-500 text-sm mt-3 leading-relaxed">${p.description}</p>
-            </div>
-            <div class="mt-6 pt-4 border-t border-slate-100">
-              <div class="flex justify-between items-end mb-4">
-                <div>
-                  <p class="text-[10px] text-slate-400 uppercase font-bold">Τιμή</p>
-                  <p class="text-xl font-black text-slate-900">${info.price}</p>
-                </div>
-                <p class="text-[10px] bg-slate-100 px-2 py-1 rounded font-bold">${info.store}</p>
-              </div>
-              <a href="${p.affiliate_url}" target="_blank" rel="noopener" class="block w-full bg-blue-600 text-white text-center py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">Περισσότερα</a>
-            </div>
-          </article>
+      grid.innerHTML = "";
+      noProducts.classList.toggle("hidden", filtered.length !== 0);
+
+      filtered.forEach(product => {
+        const info = getPriceInfo(product.id, product.store);
+        const card = document.createElement("article");
+
+        card.className = "bg-white rounded-[2rem] p-6 border border-slate-200 soft-shadow card-hover flex flex-col";
+
+        card.innerHTML = `
+          <img src="${escapeHTML(product.image)}" alt="${escapeHTML(product.title)}" class="h-44 w-full object-cover rounded-3xl mb-5">
+          <p class="text-blue-600 text-xs font-black uppercase tracking-widest">${escapeHTML(product.category)}</p>
+          <h3 class="text-2xl font-black mt-2">${escapeHTML(product.title)}</h3>
+          <p class="text-slate-600 mt-3 flex-1">${escapeHTML(product.description)}</p>
+
+          <div class="mt-5 rounded-2xl bg-slate-100 p-4">
+            <p class="text-xs text-slate-500 mb-1">Τρέχουσα τιμή / Διαθεσιμότητα</p>
+            <p class="text-base font-bold text-slate-800 leading-tight">${escapeHTML(info.price)}</p>
+            <p class="text-xs text-slate-500 mt-2 border-t border-slate-200 pt-2">Πηγή: ${escapeHTML(info.store || product.store)}</p>
+          </div>
+
+          <a
+            target="_blank"
+            rel="noopener"
+            href="${escapeHTML(product.affiliate_url)}"
+            class="mt-5 block w-full bg-slate-950 hover:bg-blue-600 text-white rounded-2xl px-5 py-3 font-black text-center"
+          >
+            Δες επιλογές
+          </a>
         `;
+
+        grid.appendChild(card);
       });
     }
 
-    // Listeners
     document.getElementById("searchInput").addEventListener("input", renderProducts);
     document.getElementById("categoryFilter").addEventListener("change", renderProducts);
     document.getElementById("storeFilter").addEventListener("change", renderProducts);
 
-    function openGuide(type) { /* Ίδιος κώδικας logic */ }
-    function closeGuide() { document.getElementById("guideModal").classList.add("hidden"); document.body.style.overflow = ""; }
+    const guides = {
+      phone: {
+        title: "Τι να προσέξεις πριν αγοράσεις μεταχειρισμένο κινητό",
+        intro: "Πριν αγοράσεις κινητό, έλεγξε τα βασικά για να μη βρεθείς με ακριβό πρόβλημα.",
+        points: [
+          ["Μπαταρία", "Σε iPhone ζήτησε battery health. Κάτω από 80% σημαίνει πιθανή αλλαγή. Σε Android έλεγξε διάρκεια χρήσης και φόρτιση."],
+          ["Οθόνη", "Έλεγξε αφή, φωτεινότητα, pixels, σκιές, γραμμές και αν η οθόνη έχει αλλαχθεί."],
+          ["Κλείδωμα", "Βεβαιώσου ότι δεν είναι κλειδωμένο σε iCloud ή Google account. Χωρίς αυτό, αγοράζεις διακοσμητικό τούβλο."],
+          ["Εγγύηση", "Αν υπάρχει εγγύηση, μειώνεται το ρίσκο. Σε refurbished είναι από τα πιο σημαντικά σημεία."],
+          ["Τελική τιμή", "Σύγκρινε τιμή με καινούργιο ή refurbished. Αν η διαφορά είναι μικρή, το μεταχειρισμένο δεν αξίζει."]
+        ]
+      },
+      laptop: {
+        title: "Laptop για δουλειά μέχρι 400€",
+        intro: "Για καθημερινή χρήση, θες σωστά βασικά και όχι εντυπωσιακό κουτί που σέρνεται.",
+        points: [
+          ["SSD", "Προτίμησε SSD. Ο παλιός HDD θα σε κάνει να γερνάς περιμένοντας να ανοίξει ο browser."],
+          ["RAM", "8GB RAM είναι το ελάχιστο για αξιοπρεπή χρήση. 16GB είναι καλύτερα αν κάνεις πολλά πράγματα μαζί."],
+          ["Οθόνη", "Έλεγξε φωτεινότητα, γραμμές, σπασίματα και αν κουράζει στα μάτια."],
+          ["Μπαταρία", "Μη βασίζεσαι στα λόγια του πωλητή. Ζήτα πραγματική διάρκεια ή έλεγχο κύκλων."],
+          ["Φορτιστής", "Να υπάρχει αξιόπιστος φορτιστής. Οι φθηνοί άγνωστοι φορτιστές είναι μικρά ηλεκτρικά λαχεία."]
+        ]
+      },
+      refurbished: {
+        title: "Refurbished ή μεταχειρισμένο;",
+        intro: "Το refurbished δίνει συνήθως περισσότερη ασφάλεια. Το μεταχειρισμένο μπορεί να είναι φθηνότερο αλλά έχει περισσότερο ρίσκο.",
+        points: [
+          ["Refurbished", "Συνήθως έχει έλεγχο, καθάρισμα, πιθανή αλλαγή ανταλλακτικών και εγγύηση."],
+          ["Μεταχειρισμένο", "Μπορεί να βγει φθηνότερο, αλλά πρέπει να ελέγξεις τα πάντα μόνος σου."],
+          ["Εγγύηση", "Αν αγοράζεις ακριβή συσκευή, η εγγύηση αξίζει παραπάνω από μια μικρή έκπτωση."],
+          ["Κατάσταση", "Δες βαθμίδα κατάστασης, σημάδια χρήσης, μπαταρία και πολιτική επιστροφής."],
+          ["Τελική επιλογή", "Για κινητά και laptop δουλειάς, refurbished με εγγύηση είναι συχνά η πιο ήρεμη λύση."]
+        ]
+      }
+    };
+
+    function openGuide(type) {
+      const guide = guides[type];
+      if (!guide) return;
+
+      const modal = document.getElementById("guideModal");
+      const content = document.getElementById("guideContent");
+
+      content.innerHTML = `
+        <p class="text-blue-600 font-black uppercase tracking-widest text-sm">Οδηγός Gadgetora</p>
+        <h2 class="text-3xl md:text-4xl font-black mt-2 pr-10">${escapeHTML(guide.title)}</h2>
+        <p class="text-slate-600 mt-4 leading-relaxed">${escapeHTML(guide.intro)}</p>
+
+        <div class="mt-6 grid gap-4">
+          ${guide.points.map(point => `
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+              <h3 class="font-black text-lg">${escapeHTML(point[0])}</h3>
+              <p class="text-slate-600 mt-2">${escapeHTML(point[1])}</p>
+            </div>
+          `).join("")}
+        </div>
+
+        <button type="button" onclick="closeGuide()" class="mt-6 w-full bg-slate-950 text-white rounded-2xl px-5 py-3 font-black hover:bg-blue-600">
+          Κλείσιμο οδηγού
+        </button>
+      `;
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeGuide() {
+      const modal = document.getElementById("guideModal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      document.body.style.overflow = "";
+    }
+
+    document.getElementById("guideModal").addEventListener("click", event => {
+      if (event.target.id === "guideModal") closeGuide();
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeGuide();
+    });
+
+    document.getElementById("askForm").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const budget = document.getElementById("budget").value.trim();
+      const deviceType = document.getElementById("deviceType").value;
+      const usage = document.getElementById("usage").value.trim();
+
+      const subject = "Αίτημα πρότασης αγοράς από Gadgetora";
+      const body = [
+        "Γεια σου Gadgetora,",
+        "",
+        "Θέλω πρόταση αγοράς.",
+        "",
+        "Budget: " + budget,
+        "Τύπος συσκευής: " + deviceType,
+        "Χρήση: " + usage,
+        "",
+        "Ευχαριστώ."
+      ].join("\n");
+
+      const mailto = "mailto:" + ADMIN_EMAIL
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+
+      document.getElementById("askMessage").textContent = "Άνοιξε το email σου με έτοιμο μήνυμα. Έλεγξέ το και στείλ' το.";
+      window.location.href = mailto;
+    });
 
     loadData();
   </script>
